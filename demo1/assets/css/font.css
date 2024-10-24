@@ -3,7 +3,7 @@
 	font-weight: 45 920;
 	font-style: normal;
 	font-display: swap;
-	src: url('/demo1/assets/fonts/PretendardVariable.woff2') format('woff2-variations');
+	src: url('/assets/fonts/PretendardVariable.woff2') format('woff2-variations');
 }
 
 
@@ -12,5 +12,5 @@
 	font-weight: 45 920;
 	font-style: normal;
 	font-display: swap;
-	src: url('/demo1/assets/fonts/IQOSHangul-Regular.woff') format('woff');
+	src: url('/assets/fonts/IQOSHangul-Regular.woff') format('woff');
 }
