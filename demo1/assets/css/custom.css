@@ -50,3 +50,17 @@
     font-weight: 700;
 }
 .wrap_main_map .color_infor .badge-circle{color: #fff;}
+.wrap_main_map .wrap_btn{
+    
+display: flex;
+    
+gap: 10px;
+    
+justify-content: center;
+    
+margin-top: 20px;
+}
+
+.wrap_main_map .wrap_btn > .btn{
+    width: 50%;
+}
