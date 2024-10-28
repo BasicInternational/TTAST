@@ -24,13 +24,14 @@
 
 .wrap_main_map  .tit_area .sub_tit {
     font-size: 1.2rem;
-    color: var(--tagify-dd-color-primary);
+    color: var(--bs-green);
     margin-bottom: 0;
+    font-weight: 500;
 }
 
 .wrap_main_map .infor_area { position: absolute; z-index: 10; top: -20px; right: 20px; } 
  .infor_area .card-flush {
-    background: #e8f3ff;
+    background: #fafcfd;
 }
 .bg-blue1 {background: rgb(1 84 119 / 60%);}
 .bg-blue2 {background: rgb(1 84 119 / 100%)}
