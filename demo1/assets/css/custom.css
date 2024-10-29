@@ -21,7 +21,7 @@
 
 .wrap_main_map .tit_area .sub_tit { font-size: 1.2rem; color: var(--bs-green); margin-bottom: 0; font-weight: 500; } 
 
-.wrap_main_map .infor_area {position: absolute;z-index: 10;/* top: -10px; */right: 30px;width: 280px;/* overflow: hidden; */padding-left: 34px;} 
+.wrap_main_map .infor_area {position: absolute;z-index: 10;top: 0;right: 30px;width: 280px;/* overflow: hidden; */padding-left: 34px;bottom: 0;} 
 
 
 .wrap_main_map .infor_area .event_box{}
@@ -82,7 +82,7 @@
 
 
 
-.wrap_main_map .infor_area .card-flush {background: #fafcfd;width: 100%;overflow: hidden;height: 560px;margin-top: -5px;} 
+.wrap_main_map .infor_area .card-flush {background: #fafcfd;width: 100%;overflow: hidden;height: 100%;margin-top: -5px;} 
 .bg-blue1 { background: rgb(1 84 119 / 60%); } 
 .bg-blue2 { background: rgb(1 84 119 / 100%) } 
 .bg-red1 { background: rgb(181 42 8 / 60%); } 
@@ -96,11 +96,15 @@
 
 .wrap_main_map .wrap_btn > .btn { width: 50%; } 
 .wrap_main_map  .card-header,
+.wrap_main_map  .card-footer,
 .wrap_main_map  .card-body {
     padding: 0px 20px;
 }
 
-
+.wrap_main_map  .card-body {
+    height: calc(100% - 570px);
+}
+.wrap_main_map  .card-footer{padding-bottom: 20px;}
 .wrap_main_map .infor_area .btn_expand {
     border: none;
     width: 36px;
@@ -140,4 +144,11 @@
 
 .wrap_main_map .infor_area.off .btn_expand {
     left: -2px;
+}
+
+.wrap_main_map  .admin_area {
+    position: absolute;
+    z-index: 10;
+    left: 30px;
+    bottom: 0;
 }
