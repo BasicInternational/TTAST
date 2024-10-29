@@ -12,6 +12,7 @@ License: For each use you must have a valid license purchased only from above li
 -->
 <html lang="ko">
   <!--begin::Head-->
+
   <head>
     <base href="../" />
     <title>TTAST -Territory Target Activities System Tool</title>
@@ -35,10 +36,7 @@ License: For each use you must have a valid license purchased only from above li
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:type" content="article" />
 
-    <link
-      rel="canonical"
-      href=""
-    />
+    <link rel="canonical" href="" />
     <link rel="shortcut icon" href="assets/media/logos/iqos_logo.png" />
     <!--begin::Fonts(mandatory for all pages)-->
     <link
@@ -73,6 +71,7 @@ License: For each use you must have a valid license purchased only from above li
   </head>
   <!--end::Head-->
   <!--begin::Body-->
+
   <body
     id="kt_app_body"
     data-kt-app-layout="light-sidebar"
@@ -611,10 +610,14 @@ License: For each use you must have a valid license purchased only from above li
                 <!-- wrap_main_map -->
                 <div class="wrap_main_map">
                   <div class="infor_area">
+                    <button class="btn_expand">
+                      <i class="ki-duotone ki-right">
+                        <span class="path1"></span>
+                        <span class="path2"></span>
+                      </i>
+                    </button>
                     <div class="card card-flush shadow-sm">
-                      <!--begin::Header-->
                       <div class="card-header pt-5">
-                        <!--begin::Title-->
                         <div class="tit_area">
                           <h3 class="tit">
                             Share of segment <br />
@@ -622,16 +625,11 @@ License: For each use you must have a valid license purchased only from above li
                           </h3>
                           <p class="sub_tit">Weekly SoS vs. W - 1</p>
                         </div>
-                        <!--end::Title-->
                       </div>
-                      <!--end::Header-->
 
-                      <!--begin::Body-->
                       <div class="card-body pt-0">
                         <div class="separator separator-dashed my-3"></div>
-                        <!--begin::Item-->
                         <div class="d-flex flex-stack">
-                          <!--begin::Statistics-->
                           <div class="color_infor">
                             <span class="txt_infor color-blue1">Growth</span>
                             <span class="badge badge-circle bg-blue2">+2</span>
@@ -640,38 +638,125 @@ License: For each use you must have a valid license purchased only from above li
                             <span class="badge badge-circle bg-red2">-2</span>
                             <span class="txt_infor color-red2">Fall</span>
                           </div>
-                          <!--end::Statistics-->
                         </div>
-                        <!--end::Item-->
 
-                        <!--begin::Separator-->
                         <div class="separator separator-dashed my-3"></div>
-                        <!--end::Separator-->
 
-                        <!--begin::Item-->
                         <div class="d-flex flex-stack">
-                          <!--begin::Section-->
                           <div class="text-gray-700 fw-semibold fs-6 me-2">
                             테스트 FS남부 (45 / FS NAMBU)
                           </div>
-                          <!--end::Section-->
                         </div>
-                        <!--end::Item-->
-                        <!--begin::Item-->
                         <div class="wrap_btn">
-                          <a
-                            href="#"
-                            class="btn btn-bg-secondary btn-color-primary btn-sm"
-                            >메뉴숨김</a
-                          >
+                      
 
                           <a
                             href="#"
-                            class="btn btn-bg-secondary btn-color-danger btn-sm"
+                            class="btn btn-bg-secondary btn-color-danger btn-sm w-100"
                             >[Log Out]</a
                           >
                         </div>
-                        <!--end::Item-->
+                        <div class="separator separator my-2"></div>
+                        <div class="event_box">
+                          <h4 class="tit_thin">Recent Event</h4>
+                          <div class="wrap_list">
+                            <a href="">
+                              <h4 class="list_tit">
+                                <strong>08.30</strong>
+                                <span>74 JINJU</span>
+                                <span>LGD자판기</span>
+                              </h4>
+                              <dl class="list">
+                                <dt><span>11:00</span>~<span>13:00</span></dt>
+                                <dd>
+                                  <strong> AQ 1 </strong>
+                                  <span> Total 1 </span>
+                                </dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <h4 class="list_tit">
+                                <strong>08.30</strong>
+                                <span>16 GWANGJU</span>
+                              </h4>
+                              <dl class="list">
+                                <dt><span>11:00</span>~<span>13:00</span></dt>
+                                <dd>
+                                  <strong> AQ 20</strong>
+                                  <span> Total 10 </span>
+                                </dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <h4 class="list_tit">
+                                <strong>08.30</strong>
+                                <span>74 JINJU</span>
+                              </h4>
+                              <dl class="list">
+                                <dt><span>11:00</span>~<span>13:00</span></dt>
+                                <dd>
+                                  <strong> AQ 1 </strong>
+                                  <span> Total 1 </span>
+                                </dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <h4 class="list_tit">
+                                <strong>08.30</strong>
+                                <span>74 JINJU</span>
+                              </h4>
+                              <dl class="list">
+                                <dt><span>11:00</span>~<span>13:00</span></dt>
+                                <dd>
+                                  <strong> AQ 1 </strong>
+                                  <span> Total 1 </span>
+                                </dd>
+                              </dl>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="separator separator my-2"></div>
+                        <div class="event_box">
+                          <h4 class="tit_thin">Reports</h4>
+                          <div class="wrap_list scroll-y h-100px">
+                            <a href="">
+                              <dl class="list">
+                                <dt>10.28.04:46</dt>
+                                <dd class="">관리자 리포트</dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <dl class="list">
+                                <dt>10.28.04:46</dt>
+                                <dd class="">관리자 리포트</dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <dl class="list">
+                                <dt>10.28.04:46</dt>
+                                <dd class="">관리자 리포트</dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <dl class="list">
+                                <dt>10.28.04:46</dt>
+                                <dd class="">관리자 리포트</dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <dl class="list">
+                                <dt>10.28.04:46</dt>
+                                <dd class="">관리자 리포트</dd>
+                              </dl>
+                            </a>
+                            <a href="">
+                              <dl class="list">
+                                <dt>10.28.04:46</dt>
+                                <dd class="">관리자 리포트</dd>
+                              </dl>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                       <!--end::Body-->
                     </div>
@@ -874,6 +959,11 @@ License: For each use you must have a valid license purchased only from above li
         // Make stuff animate on load
         chart.appear(1000, 100);
       }); // end am5.ready()
+    </script>
+    <script>
+     $('.btn_expand').click(function(){
+      $(this).parents('.infor_area').toggleClass('off')
+     });
     </script>
     <!-- <script>
       var containers = document.querySelectorAll(".draggable-zone");
