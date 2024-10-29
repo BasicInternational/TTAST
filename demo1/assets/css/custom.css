@@ -21,7 +21,7 @@
 
 .wrap_main_map .tit_area .sub_tit { font-size: 1.2rem; color: var(--bs-green); margin-bottom: 0; font-weight: 500; } 
 
-.wrap_main_map .infor_area {position: absolute;z-index: 10;top: -10px;right: 30px;width: 280px;/* overflow: hidden; */padding-left: 34px;} 
+.wrap_main_map .infor_area {position: absolute;z-index: 10;/* top: -10px; */right: 30px;width: 280px;/* overflow: hidden; */padding-left: 34px;} 
 
 
 .wrap_main_map .infor_area .event_box{}
@@ -139,5 +139,5 @@
 }
 
 .wrap_main_map .infor_area.off .btn_expand {
-    left: 0;
+    left: -2px;
 }
