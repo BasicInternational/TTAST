@@ -208,7 +208,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="menu-sub menu-sub-accordion pt-3">
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3 active">
+                            <a href="#" class="menu-link py-3 active toggle">
 
                               <span class="menu-title ">GSE</span>
                             </a>
@@ -217,7 +217,7 @@ License: For each use you must have a valid license purchased only from above li
 
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3  toggle">
 
                               <span class="menu-title">BTQ</span>
                             </a>
@@ -225,7 +225,7 @@ License: For each use you must have a valid license purchased only from above li
                           <!--end::Menu item-->
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3  toggle">
 
                               <span class="menu-title">T1</span>
                             </a>
@@ -233,7 +233,7 @@ License: For each use you must have a valid license purchased only from above li
                           <!--end::Menu item-->
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3  toggle">
 
                               <span class="menu-title">Cor</span>
                             </a>
@@ -241,7 +241,7 @@ License: For each use you must have a valid license purchased only from above li
                           <!--end::Menu item-->
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3  toggle">
 
                               <span class="menu-title">T2</span>
                             </a>
@@ -249,7 +249,7 @@ License: For each use you must have a valid license purchased only from above li
                           <!--end::Menu item-->
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3  toggle">
 
                               <span class="menu-title">T3</span>
                             </a>
@@ -408,7 +408,7 @@ License: For each use you must have a valid license purchased only from above li
                         <div class="menu-sub menu-sub-accordion pt-3">
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3 move_link">
 
                               <span class="menu-title">장소 관리</span>
                             </a>
@@ -417,7 +417,7 @@ License: For each use you must have a valid license purchased only from above li
 
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3 move_link">
 
                               <span class="menu-title">이벤트 관리</span>
                             </a>
@@ -425,7 +425,7 @@ License: For each use you must have a valid license purchased only from above li
                           <!--end::Menu item-->
                           <!--begin::Menu item-->
                           <div class="menu-item">
-                            <a href="#" class="menu-link py-3">
+                            <a href="#" class="menu-link py-3 move_link">
 
                               <span class="menu-title">리포트</span>
                             </a>
@@ -851,8 +851,12 @@ License: For each use you must have a valid license purchased only from above li
         $(this).parents('.admin_area').toggleClass('on')  
       })
      $('.admin_area .menu-sub-accordion .menu-link').click(function(){
-       $(this).toggleClass('active');
-       $(this).parent('.menu-item').siblings().find('.menu-link').removeClass('active')
+      if(!$(this).hasClass('move_link')){
+
+        $(this).toggleClass('active');
+        if(!$(this).hasClass('toggle'))
+        $(this).parent('.menu-item').siblings().find('.menu-link').removeClass('active')
+      }
      })
       
     });
