@@ -340,6 +340,7 @@
 	.wrap_login_area {
 		gap: 30px;
 		justify-content: space-evenly;
+		margin-top: 10px;
 	}
 
 }

@@ -40,12 +40,12 @@ License: For each use you must have a valid license purchased only from above li
   <script>var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
   <div class="d-flex flex-column flex-root" id="kt_app_root">
     <div class="d-flex flex-column flex-lg-row flex-column-fluid ">
-      <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 h-100 justify-content-evenly">
+      <div class="wrap_login_area">
         <div class="d-flex flex-center flex-column flex-lg-row-fluid">
           <div class="login_area">
             <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="index.html"
               action="#">
-              <div class="text-center mb-11">
+              <div class="text-center  mb-6 mt-6">
 
                 <h1 class="wrap_logo">
                   <img src="assets/media/logos/iqos_logo.png" alt="">
