@@ -50,7 +50,7 @@
 	font-size: 1.4rem;
 	font-weight: 700;
 	line-height: 1.5;
-	margin-bottom: 0;
+	margin-bottom: 6px;
 }
 
 .wrap_main_map .tit_area .sub_tit {
@@ -292,19 +292,20 @@
 	margin: 0;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 10px 20px;
+	gap: 10px 30px;
 }
 
 .infor_area .legend li {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	width: calc(50% - 10px);
+	width: calc(35% - 10px);
 	display: flex;
 	align-items: center;
 	gap: 7px;
 	font-size: 1rem;
 	font-weight: 600;
+	justify-content: space-between;
 	color: #666;
 }
 
