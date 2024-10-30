@@ -321,6 +321,29 @@
 	box-shadow: var(--bs-box-shadow);
 }
 
+.wrap_login_area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 20px;
+	height: 100%;
+}
+
+@media screen and (max-width:800px) {
+	.login_area {
+		padding: 10px;
+		width: calc(100vw - 20px);
+	}
+
+	.wrap_login_area {
+		gap: 30px;
+		justify-content: space-evenly;
+	}
+
+}
+
 .form-check-custom .form-check-label {
 	font-weight: 600;
 	color: #666;
