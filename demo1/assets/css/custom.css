@@ -268,3 +268,14 @@
 .wrap_main_map .admin_area .menu {
 	padding: 5px 5px;
 }
+.wrap_main_map .admin_area.on #infor_menu {
+	display: flex;
+	bottom: 50px;
+	position: absolute;
+}
+.admin_area #toggleAdminArea i{
+    transition: .3s;
+}
+.admin_area.on #toggleAdminArea i {
+	transform: rotate(180deg);
+}
