@@ -216,7 +216,6 @@
 	padding-bottom: 20px;
 	background: rgb(0 188 212 / 3%);
 	padding-top: 20px;
-	);
 }
 
 .wrap_main_map .infor_area .btn_expand {
@@ -312,4 +311,38 @@
 .infor_area .legend li .bullet {
 	width: 8px;
 	height: 8px;
+}
+
+.login_area {
+	max-width: 100%;
+	width: 440px;
+	background: #fff;
+	padding: 30px 40px;
+	box-shadow: var(--bs-box-shadow);
+}
+
+.form-check-custom .form-check-label {
+	font-weight: 600;
+	color: #666;
+}
+
+.login_area .wrap_logo {
+	height: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.login_area .form-check-custom input:checked + .form-check-label {
+	color: var(--bs-primary);
+}
+
+.login_area .wrap_logo img {
+	height: 100%;
+}
+
+.login_area .requird {
+	color: var(--bs-danger);
 }
