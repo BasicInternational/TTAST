@@ -172,76 +172,126 @@ License: For each use you must have a valid license purchased only from above li
                                 </div>
                                 <div class="chart_area">
                                     <div class="card card-flush w-100 shadow-sm">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Consumable Unit : %, Tho Stick</h3>
-                                            <div class="card-toolbar d-flex gap-1">
+                                        <div class="box">
 
+                                            <div class="box-header">
+                                                <h3 class="card-title">Consumable Unit : %, Tho Stick</h3>
+                                                <div class="card-toolbar d-flex gap-1">
+                                                    <ul class="nav" id="" role="tablist">
+                                                        <li class="nav-item sm" role="presentation">
+                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
+                                                                data-bs-toggle="tab" href="#linechart_01"
+                                                                aria-selected="true" role="tab">SoS</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                data-bs-toggle="tab" href="#linechart_02"
+                                                                aria-selected="false" role="tab" tabindex="-1">SoM</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                data-bs-toggle="tab" href="#linechart_03"
+                                                                aria-selected="false" role="tab" tabindex="-1">Ind
+                                                                Vol</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="box-body"><!--begin::Chart-->
+                                                <div class="tab-content">
+                                                    <!--begin::Tab pane-->
+                                                    <div class="tab-pane fade active show" id="linechart_01"
+                                                        role="tabpanel" aria-labelledby="">
 
-                                                <!-- <button type="button" class="btn btn-sm btn-light-primary ">
-                                                    SoS
-                                                </button>
-                                                <button type="button" class="btn btn-sm btn-light-primary ">
-                                                    SoM
-                                                </button>
-                                                <button type="button" class="btn btn-sm btn-light-primary ">
-                                                    Ind Vol
-                                                </button> -->
-                                                <ul class="nav" id="kt_chart_widget_8_tabs" role="tablist">
-                                                    <li class="nav-item" role="presentation">
-                                                        <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light fw-bold px-4 me-1 active"
-                                                            data-bs-toggle="tab" 
-                                                            href="#linechart_01" aria-selected="true"
-                                                            role="tab">Month</a>
-                                                    </li>
-                                                    <li class="nav-item" role="presentation">
-                                                        <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light fw-bold px-4 me-1"
-                                                            data-bs-toggle="tab" 
-                                                            href="#linechart_02" aria-selected="false"
-                                                            role="tab" tabindex="-1">Week</a>
-                                                    </li>
-                                                    <li class="nav-item" role="presentation">
-                                                        <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light fw-bold px-4 me-1" data-bs-toggle="tab"
-                                                             href="#linechart_03" aria-selected="false" role="tab" tabindex="-1">Ind Vol</a>
-                                                    </li>
-                                                </ul>
+                                                        <!--begin::Chart-->
+                                                        <div id="lineChartSOS" style="height: 225px;"></div>
+                                                        <!--end::Chart-->
+                                                    </div>
+                                                    <!--end::Tab pane-->
+                                                    <!--begin::Tab pane-->
+                                                    <div class="tab-pane fade" id="linechart_02" role="tabpanel"
+                                                        aria-labelledby="">
+                                                        <!--begin::Chart-->
+                                                        <div id="lineChartSOm" style="height: 225px;"></div>
+                                                        <!--end::Chart-->
+
+                                                    </div>
+                                                    <!--end::Tab pane-->
+                                                    <!--begin::Tab pane-->
+                                                    <div class="tab-pane fade" id="linechart_03" role="tabpanel"
+                                                        aria-labelledby="">
+                                                        <!--begin::Chart-->
+                                                        <div id="lineChartIndVol" style="height: 225px;"></div>
+                                                        <!--end::Chart-->
+
+                                                    </div>
+                                                    <!--end::Tab pane-->
+                                                </div>
+                                                <!--end::Chart-->
                                             </div>
                                         </div>
-                                        <div class="card-body"><!--begin::Chart-->
-                                            <div class="tab-content">
-                                                <!--begin::Tab pane-->
-                                                <div class="tab-pane fade active show"
-                                                    id="linechart_01" role="tabpanel"
-                                                    aria-labelledby="">
+                                        <div class="box">
 
-                                                    <!--begin::Chart-->
-                                                    <div id="lineChartSOS" style="height: 350px;"></div>
-                                                    <!--end::Chart-->
+                                            <div class="box-header">
+                                                <h3 class="card-title">Device COT
+                                                </h3>
+                                                <div class="card-toolbar d-flex gap-1">
+                                                    <ul class="nav" id="" role="tablist">
+                                                        <li class="nav-item sm" role="presentation">
+                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
+                                                                data-bs-toggle="tab" href="#barchart_01"
+                                                                aria-selected="true" role="tab">Channel</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                data-bs-toggle="tab" href="#barchart_02"
+                                                                aria-selected="false" role="tab"
+                                                                tabindex="-1">Program</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                data-bs-toggle="tab" href="#barchart_03"
+                                                                aria-selected="false" role="tab" tabindex="-1">CVS
+                                                                Vol</a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                                <!--end::Tab pane-->
-                                                <!--begin::Tab pane-->
-                                                <div class="tab-pane fade" id="linechart_02"
-                                                    role="tabpanel" aria-labelledby="">
-                                                    <!--begin::Chart-->
-                                                    <div id="lineChartSOm" style="height: 350px;"></div>
-                                                    <!--end::Chart-->
-
-                                                </div>
-                                                <!--end::Tab pane-->
-                                                <!--begin::Tab pane-->
-                                                <div class="tab-pane fade" id="linechart_03" role="tabpanel" aria-labelledby="">
-                                                    <!--begin::Chart-->
-                                                    <div id="lineChartSOm" style="height: 350px;"></div>
-                                                    <!--end::Chart-->
-                                                
-                                                </div>
-                                                <!--end::Tab pane-->
                                             </div>
-                                            <!--end::Chart-->
-                                        </div>
-                                        <div class="card-footer">
-                                            Footer
+                                            <div class="box-body"><!--begin::Chart-->
+                                                <div class="tab-content">
+                                                    <!--begin::Tab pane-->
+                                                    <div class="tab-pane fade active show" id="barchart_01"
+                                                        role="tabpanel" aria-labelledby="">
+
+                                                        <!--begin::Chart-->
+                                                        <div id="barchart1" style="height: 225px;"></div>
+                                                        <!--end::Chart-->
+                                                    </div>
+                                                    <!--end::Tab pane-->
+                                                    <!--begin::Tab pane-->
+                                                    <div class="tab-pane fade" id="barchart_02" role="tabpanel"
+                                                        aria-labelledby="">
+                                                        <!--begin::Chart-->
+                                                        <div id="barchart2" style="height: 225px;"></div>
+                                                        <!--end::Chart-->
+
+                                                    </div>
+                                                    <!--end::Tab pane-->
+                                                    <!--begin::Tab pane-->
+                                                    <div class="tab-pane fade" id="barchart_03" role="tabpanel"
+                                                        aria-labelledby="">
+                                                        <!--begin::Chart-->
+                                                        <div id="barchart3" style="height: 225px;"></div>
+                                                        <!--end::Chart-->
+
+                                                    </div>
+                                                    <!--end::Tab pane-->
+                                                </div>
+                                                <!--end::Chart-->
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="side_area">
                                     <div class="card card-flush bgi-no-repeat bgi-size-contain bgi-position-x-center border-0 h-md-50 mb-5 mb-xl-10"
@@ -437,10 +487,12 @@ License: For each use you must have a valid license purchased only from above li
     <!-- 샘플 차트 -->
 
     <script>// Define the chart options
-        var options = {
+        // line chart
+        var options1 = {
             chart: {
                 type: 'line',
-                height: 350,
+                height: 220,
+
                 toolbar: {
                     show: false // Disable toolbar to match Keen's style
                 }
@@ -472,26 +524,125 @@ License: For each use you must have a valid license purchased only from above li
                     }
                 }
             },
-            colors: ['#00aaff', '#ff4560'], // Customize colors for each series
+            colors: ['#1f608c', '#17a689'], // Customize colors for each series
             stroke: {
-                width: 2
+                width: 3
             }
         };
         var options2 = {
             chart: {
                 type: 'line',
-                height: 350,
+                height: 220,
+
                 toolbar: {
                     show: false // Disable toolbar to match Keen's style
                 }
             },
             series: [
                 {
-                    name: "AA",
+                    name: "TEREA",
                     data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
                 },
                 {
-                    name: "BB&G",
+                    name: "MIX",
+                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
+                },
+
+                {
+                    name: "FIT",
+                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
+                },
+                {
+                    name: "NEO",
+                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
+                }
+            ],
+            xaxis: {
+                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
+                }
+            },
+            colors: ['#05998f', '#136dd4', '#cd13d4', '#e09c09'], // Customize colors for each series
+            stroke: {
+                width: 3
+            }
+        };
+        var options3 = {
+            chart: {
+                type: 'line',
+                height: 220,
+
+                toolbar: {
+                    show: false // Disable toolbar to match Keen's style
+                }
+            },
+            series: [
+
+                {
+                    name: "Compuable",
+                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
+                },
+
+                {
+                    name: "CC",
+                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
+                },
+                {
+                    name: "HnB",
+                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
+                }
+            ],
+            xaxis: {
+                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
+                }
+            },
+            colors: ['#8f8f8f', '#eb2f09', '#006a9c'], // Customize colors for each series
+            stroke: {
+                width: 3
+            }
+        };
+        // bar chart
+        var options21 = {
+            chart: {
+                type: 'bar',
+                height: 220,
+                stacked: true,
+                toolbar: {
+                    show: false // Disable toolbar to match Keen's style
+                }
+            },
+            series: [
+                {
+                    name: "PMK",
+                    data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
+                },
+                {
+                    name: "KT&G",
                     data: [20, 30, 25, 45, 40, 55, 65, 80, 110] // Sample data points for Revenue
                 }
             ],
@@ -512,58 +663,124 @@ License: For each use you must have a valid license purchased only from above li
                     }
                 }
             },
-            colors: ['#00aaff', '#ff4560'], // Customize colors for each series
+            colors: ['#1f608c', '#17a689'], // Customize colors for each series
             stroke: {
-                width: 2
+                width: 0
             }
         };
-    var options3= {
-        chart: {
-            type: 'line',
-            height: 350,
-            toolbar: {
-                show: false // Disable toolbar to match Keen's style
-            }
-        },
-        series: [
-            {
-                name: "AA",
-                data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
+        var options22 = {
+            chart: {
+               type: 'bar',
+                height: 220,
+                stacked: true,
+
+                toolbar: {
+                    show: false // Disable toolbar to match Keen's style
+                }
             },
-            {
-                name: "BB&G",
-                data: [20, 30, 25, 45, 40, 55, 65, 80, 110] // Sample data points for Revenue
-            }
-        ],
-        xaxis: {
-            categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
-            labels: {
-                style: {
-                    colors: "#6e707e", // Font color that matches Keen's theme
-                    fontSize: '12px'
+            series: [
+                {
+                    name: "TEREA",
+                    data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
+                },
+                {
+                    name: "MIX",
+                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
+                },
+
+                {
+                    name: "FIT",
+                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
+                },
+                {
+                    name: "NEO",
+                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
                 }
-            }
-        },
-        yaxis: {
-            labels: {
-                style: {
-                    colors: "#6e707e", // Font color that matches Keen's theme
-                    fontSize: '12px'
+            ],
+            xaxis: {
+                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
                 }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
+                }
+            },
+            colors: ['#05998f', '#136dd4', '#cd13d4', '#e09c09'], // Customize colors for each series
+            stroke: {
+                width: 0
             }
-        },
-        colors: ['#00aaff', '#ff4560'], // Customize colors for each series
-        stroke: {
-            width: 2
-        }
-    };
+        };
+        var options23 = {
+            chart: {
+               type: 'bar',
+                height: 220,
+                stacked: true,
+
+                toolbar: {
+                    show: false // Disable toolbar to match Keen's style
+                }
+            },
+            series: [
+
+                {
+                    name: "Compuable",
+                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
+                },
+
+                {
+                    name: "CC",
+                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
+                },
+                {
+                    name: "HnB",
+                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
+                }
+            ],
+            xaxis: {
+                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        colors: "#6e707e", // Font color that matches Keen's theme
+                        fontSize: '12px'
+                    }
+                }
+            },
+            colors: ['#8f8f8f', '#eb2f09', '#006a9c'], // Customize colors for each series
+            stroke: {
+                width: 0
+            }
+        };
 
         // Render the chart
-        var chart = new ApexCharts(document.querySelector("#lineChartSOS"), options);
+        var chart1 = new ApexCharts(document.querySelector("#lineChartSOS"), options1);
         var chart2 = new ApexCharts(document.querySelector("#lineChartSOm"), options2);
-         var chart3= new ApexCharts(document.querySelector("#lineChartIndVol"), options3);
-        chart.render();
+        var chart3 = new ApexCharts(document.querySelector("#lineChartIndVol"), options3);
+        var chart21 = new ApexCharts(document.querySelector("#barchart1"), options21);
+        var chart22 = new ApexCharts(document.querySelector("#barchart2"), options22);
+        var chart23 = new ApexCharts(document.querySelector("#barchart3"), options23);
+        chart1.render();
         chart2.render();
+        chart3.render();
+        chart21.render();
+        chart22.render();
+        chart23.render();
     </script>
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
