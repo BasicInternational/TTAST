@@ -173,3 +173,14 @@ gap: 10px; }
     font-size: 1rem;
     color: #eee;
 }
+
+.wrap_dashboard .side_area .tit {
+    font-size: 1.4rem;
+    color: #333;
+    padding-top: 11px;
+}
+
+.wrap_dashboard .side_area .sub-tit {
+    color: #444;
+    margin-bottom: 15px;
+}
