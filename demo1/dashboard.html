@@ -188,16 +188,20 @@ License: For each use you must have a valid license purchased only from above li
                                                 </button> -->
                                                 <ul class="nav" id="kt_chart_widget_8_tabs" role="tablist">
                                                     <li class="nav-item" role="presentation">
-                                                        <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1 active"
-                                                            data-bs-toggle="tab" id="kt_chart_widget_8_week_toggle"
-                                                            href="#kt_charts_widget_35_tab_content_1" aria-selected="true"
+                                                        <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light fw-bold px-4 me-1 active"
+                                                            data-bs-toggle="tab" 
+                                                            href="#linechart_01" aria-selected="true"
                                                             role="tab">Month</a>
                                                     </li>
                                                     <li class="nav-item" role="presentation">
-                                                        <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bold px-4 me-1"
-                                                            data-bs-toggle="tab" id="kt_chart_widget_8_month_toggle"
-                                                            href="#kt_charts_widget_35_tab_content_2" aria-selected="false"
+                                                        <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light fw-bold px-4 me-1"
+                                                            data-bs-toggle="tab" 
+                                                            href="#linechart_02" aria-selected="false"
                                                             role="tab" tabindex="-1">Week</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light fw-bold px-4 me-1" data-bs-toggle="tab"
+                                                             href="#linechart_03" aria-selected="false" role="tab" tabindex="-1">Ind Vol</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -206,7 +210,7 @@ License: For each use you must have a valid license purchased only from above li
                                             <div class="tab-content">
                                                 <!--begin::Tab pane-->
                                                 <div class="tab-pane fade active show"
-                                                    id="kt_charts_widget_35_tab_content_1" role="tabpanel"
+                                                    id="linechart_01" role="tabpanel"
                                                     aria-labelledby="">
 
                                                     <!--begin::Chart-->
@@ -215,12 +219,20 @@ License: For each use you must have a valid license purchased only from above li
                                                 </div>
                                                 <!--end::Tab pane-->
                                                 <!--begin::Tab pane-->
-                                                <div class="tab-pane fade" id="kt_charts_widget_35_tab_content_2"
+                                                <div class="tab-pane fade" id="linechart_02"
                                                     role="tabpanel" aria-labelledby="">
                                                     <!--begin::Chart-->
                                                     <div id="lineChartSOm" style="height: 350px;"></div>
                                                     <!--end::Chart-->
 
+                                                </div>
+                                                <!--end::Tab pane-->
+                                                <!--begin::Tab pane-->
+                                                <div class="tab-pane fade" id="linechart_03" role="tabpanel" aria-labelledby="">
+                                                    <!--begin::Chart-->
+                                                    <div id="lineChartSOm" style="height: 350px;"></div>
+                                                    <!--end::Chart-->
+                                                
                                                 </div>
                                                 <!--end::Tab pane-->
                                             </div>
@@ -505,10 +517,51 @@ License: For each use you must have a valid license purchased only from above li
                 width: 2
             }
         };
+    var options3= {
+        chart: {
+            type: 'line',
+            height: 350,
+            toolbar: {
+                show: false // Disable toolbar to match Keen's style
+            }
+        },
+        series: [
+            {
+                name: "AA",
+                data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
+            },
+            {
+                name: "BB&G",
+                data: [20, 30, 25, 45, 40, 55, 65, 80, 110] // Sample data points for Revenue
+            }
+        ],
+        xaxis: {
+            categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
+            labels: {
+                style: {
+                    colors: "#6e707e", // Font color that matches Keen's theme
+                    fontSize: '12px'
+                }
+            }
+        },
+        yaxis: {
+            labels: {
+                style: {
+                    colors: "#6e707e", // Font color that matches Keen's theme
+                    fontSize: '12px'
+                }
+            }
+        },
+        colors: ['#00aaff', '#ff4560'], // Customize colors for each series
+        stroke: {
+            width: 2
+        }
+    };
 
         // Render the chart
         var chart = new ApexCharts(document.querySelector("#lineChartSOS"), options);
         var chart2 = new ApexCharts(document.querySelector("#lineChartSOm"), options2);
+         var chart3= new ApexCharts(document.querySelector("#lineChartIndVol"), options3);
         chart.render();
         chart2.render();
     </script>
