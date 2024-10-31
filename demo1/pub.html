@@ -172,8 +172,19 @@ License: For each use you must have a valid license purchased only from above li
                         <td class="link"><a href="/" target="_blank"></a>
                         </td>
                         <td class="state end">
-                      
-                      
+
+
+                        </td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="index"></td>
+                        <td class="name">dashboard</td>
+                        <td class="link"><a href="/dashboard.html" target="_blank"></a>
+                        </td>
+                        <td class="state ing">
+
+
                         </td>
                         <td></td>
                       </tr>
@@ -241,7 +252,7 @@ License: For each use you must have a valid license purchased only from above li
 
   <script>
     document.querySelectorAll("tr td.index").forEach((element, index) => {
-      element.innerHTML = index+1
+      element.innerHTML = index + 1
     });
     document.querySelectorAll("tr td.link a").forEach((element, index) => {
       var _txt = element.getAttribute('href');
@@ -272,7 +283,8 @@ License: For each use you must have a valid license purchased only from above li
   .wrap_ia_list td.link {
     text-align: right;
   }
-.wrap_ia_list td.link a {
+
+  .wrap_ia_list td.link a {
     min-width: 30px;
     border: 1px solid #eee;
     height: 30px;
@@ -283,14 +295,24 @@ License: For each use you must have a valid license purchased only from above li
     display: flex;
     align-items: center;
     justify-content: center;
-}
-  td.state.end:before {
-    content: '완료';
   }
 
   td.state.end {
     background: #00bcd414;
     text-align: center;
+  }
+
+  td.state.end:before {
+    content: '완료';
+  }
+
+  td.state {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  td.state.ing:before {
+    content: '진행중';
   }
 </style>
 <!--end::Body-->

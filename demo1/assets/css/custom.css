@@ -370,3 +370,40 @@
 .login_area .requird {
 	color: var(--bs-danger);
 }
+
+.wrap_dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100vw;
+    padding-bottom: 16px;
+}
+.wrap_dashboard .map_area{
+    width: 40%;
+    display: flex;
+}
+
+
+.wrap_dashboard .map_area .map{
+
+height: 360px;
+}
+.wrap_dashboard .map_area .dash-btn-group{
+	
+display: flex;
+	
+align-items: center;
+	
+justify-content: center;
+	
+gap: 10px;
+}
+.wrap_dashboard .chart_area{
+    display: flex;
+    width: 40%;
+}
+.wrap_dashboard .side_area{
+    width: 20%;
+}
