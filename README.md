@@ -20,3 +20,6 @@
 ## Start the localhost server
   1. cd tools/
   2. npm run localhost
+
+## pub list
+  http://localhost:8081/pub.html  
