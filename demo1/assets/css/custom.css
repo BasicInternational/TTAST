@@ -1,5 +1,14 @@
 @import "font.css";
 
+.a11y {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	top: -900px, ;
+	margin: -1px;
+}
+
 #kt_app_sidebar_logo {
 }
 
@@ -714,7 +723,7 @@ table td {
 	border-radius: 4px;
 }
 
-.wrap_aside_area .wrap_place_list .place_list li a {
+.wrap_aside_area .wrap_place_list .place_list li button {
 	display: flex;
 	color: #666;
 	align-items: center;
@@ -724,9 +733,12 @@ table td {
 	border-radius: 9px;
 	padding: 10px 12px;
 	transition: .3s;
+	border: none;
+	text-align: left;
+	width: 100%;
 }
 
-.wrap_aside_area .wrap_place_list .place_list li a:hover {
+.wrap_aside_area .wrap_place_list .place_list li button:hover {
 	background: rgb(233 243 255 / 80%);
 }
 
@@ -762,4 +774,12 @@ table td {
 	font-weight: 400;
 	color: #333;
 	font-size: 1rem;
+}
+
+.wrap_form_area {
+	margin: 10px 10px 0px 410px;
+}
+
+.wrap_form_area .card {
+	height: calc(100vh - 40px);
 }
