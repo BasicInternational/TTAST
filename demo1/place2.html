@@ -80,39 +80,6 @@ License: For each use you must have a valid license purchased only from above li
     <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
         <!--begin::Page-->
         <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
-            <!--begin::Header-->
-            <div id="kt_app_header" class="app-header d-lg-none">
-                <!--begin::Header container-->
-                <div class="app-container container-fluid d-flex align-items-stretch justify-content-between"
-                    id="kt_app_header_container">
-                    <!--begin::sidebar mobile toggle-->
-                    <div class="d-flex align-items-center d-lg-none ms-n3 me-2" title="Show sidebar menu">
-                        <div class="btn btn-icon btn-active-color-primary w-35px h-35px"
-                            id="kt_app_sidebar_mobile_toggle">
-                            <i class="ki-duotone ki-abstract-14 fs-1">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                            </i>
-                        </div>
-                    </div>
-                    <!--end::sidebar mobile toggle-->
-                    <!--begin::Mobile logo-->
-                    <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
-                        <a href="index.html" class="d-lg-none d-flex align-items-center">
-                            <img alt="Logo" src="assets/media/logos/ttst_logo.png" class="theme-light-show h-30px" />
-                            <h2 class="mb-0 ms-2">IEEMS</h2>
-                            <!-- <img
-                  alt="Logo"
-                  src="assets/media/logos/default-small-dark.svg"
-                  class="theme-dark-show h-30px"
-                /> -->
-                        </a>
-                    </div>
-                    <!--end::Mobile logo-->
-                </div>
-                <!--end::Header container-->
-            </div>
-            <!--end::Header-->
             <!--begin::Wrapper-->
             <div class="app-wrapper flex-column flex-row-fluid ms-0" id="kt_app_wrapper">
                 <!--begin::Sidebar-->
@@ -128,567 +95,129 @@ License: For each use you must have a valid license purchased only from above li
                         <!--begin::Content-->
                         <div id="kt_app_content" class="app-content flex-column-fluid">
                             <!--begin::Content container-->
-                            <!-- wrap_dashboard -->
-                            <div class="wrap_dashboard">
-                                <div class="row">
-                                    <div class="map_area">
-                                        <div class="card  card-flush w-100">
-                                            <div class="card-header">
-                                                <h3 class="card-title fw-bold">안양시만안구</h3>
-                                                <div class="card-toolbar">
-                                                    <button type="button" class="btn btn-sm btn-light-primary ">
-                                                        Full Map
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="card-body ">
-                                                <div class="map">
-                                                    <!-- sample chart -->
-                                                    <div id="chartdiv" style="height: 100%"></div>
-                                                    <script
-                                                        src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
-                                                    <!--// sample chart -->
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="dash-btn-group">
-                                                    <a href="#" class="btn btn-light-info btn-sm">Info</a>
-                                                    <button type="button" class="btn btn-light-info btn-sm"
-                                                        id="btn_dashboard_2">Ciga</button>
-                                                    <button type="button" class="btn btn-light-info btn-sm"
-                                                        id="btn_dashboard_3">HnB</button>
-                                                    <button type="button" class="btn btn-light-info btn-sm"
-                                                        id="btn_dashboard_4">CC</button>
-                                                    <button type="button" class="btn btn-light-info btn-sm"
-                                                        id="btn_dashboard_5">CVS</button>
-                                                    <button type="button" class="btn btn-light-info btn-sm"
-                                                        id="btn_dashboard_7">Tier</button>
-                                                    <button type="button" class="btn btn-light-info btn-sm"
-                                                        id="btn_dashboard_6">Device</button>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="chart_area">
-                                        <div class="card card-flush w-100 shadow-sm">
-                                            <div class="box">
-
-                                                <div class="box-header">
-                                                    <h3 class="card-title">Consumable Unit : %, Tho Stick</h3>
-                                                    <div class="card-toolbar d-flex gap-1">
-                                                        <ul class="nav" id="" role="tablist">
-                                                            <li class="nav-item sm" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
-                                                                    data-bs-toggle="tab" href="#linechart_01"
-                                                                    aria-selected="true" role="tab">SoS</a>
-                                                            </li>
-                                                            <li class="nav-item" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                    data-bs-toggle="tab" href="#linechart_02"
-                                                                    aria-selected="false" role="tab"
-                                                                    tabindex="-1">SoM</a>
-                                                            </li>
-                                                            <li class="nav-item" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                    data-bs-toggle="tab" href="#linechart_03"
-                                                                    aria-selected="false" role="tab" tabindex="-1">Ind
-                                                                    Vol</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="box-body"><!--begin::Chart-->
-                                                    <div class="tab-content">
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade active show" id="linechart_01"
-                                                            role="tabpanel" aria-labelledby="">
-
-                                                            <!--begin::Chart-->
-                                                            <div id="lineChartSOS" style="height: 225px;"></div>
-                                                            <!--end::Chart-->
-                                                        </div>
-                                                        <!--end::Tab pane-->
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade" id="linechart_02" role="tabpanel"
-                                                            aria-labelledby="">
-                                                            <!--begin::Chart-->
-                                                            <div id="lineChartSOm" style="height: 225px;"></div>
-                                                            <!--end::Chart-->
-
-                                                        </div>
-                                                        <!--end::Tab pane-->
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade" id="linechart_03" role="tabpanel"
-                                                            aria-labelledby="">
-                                                            <!--begin::Chart-->
-                                                            <div id="lineChartIndVol" style="height: 225px;"></div>
-                                                            <!--end::Chart-->
-
-                                                        </div>
-                                                        <!--end::Tab pane-->
-                                                    </div>
-                                                    <!--end::Chart-->
-                                                </div>
-                                            </div>
-                                            <div class="separator separator-dashed my-5"></div>
-                                            <div class="box">
-
-                                                <div class="box-header">
-                                                    <h3 class="card-title">Device COT
-                                                    </h3>
-                                                    <div class="card-toolbar d-flex gap-1">
-                                                        <ul class="nav" id="" role="tablist">
-                                                            <li class="nav-item sm" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
-                                                                    data-bs-toggle="tab" href="#barchart_01"
-                                                                    aria-selected="true" role="tab">Channel</a>
-                                                            </li>
-                                                            <li class="nav-item" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                    data-bs-toggle="tab" href="#barchart_02"
-                                                                    aria-selected="false" role="tab"
-                                                                    tabindex="-1">Program</a>
-                                                            </li>
-                                                            <li class="nav-item" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                    data-bs-toggle="tab" href="#barchart_03"
-                                                                    aria-selected="false" role="tab" tabindex="-1">CVS
-                                                                    Vol</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="box-body"><!--begin::Chart-->
-                                                    <div class="tab-content">
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade active show" id="barchart_01"
-                                                            role="tabpanel" aria-labelledby="">
-
-                                                            <!--begin::Chart-->
-                                                            <div id="barchart1" style="height: 225px;"></div>
-                                                            <!--end::Chart-->
-                                                        </div>
-                                                        <!--end::Tab pane-->
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade" id="barchart_02" role="tabpanel"
-                                                            aria-labelledby="">
-                                                            <!--begin::Chart-->
-                                                            <div id="barchart2" style="height: 225px;"></div>
-                                                            <!--end::Chart-->
-
-                                                        </div>
-                                                        <!--end::Tab pane-->
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade" id="barchart_03" role="tabpanel"
-                                                            aria-labelledby="">
-                                                            <!--begin::Chart-->
-                                                            <div id="barchart3" style="height: 225px;"></div>
-                                                            <!--end::Chart-->
-
-                                                        </div>
-                                                        <!--end::Tab pane-->
-                                                    </div>
-                                                    <!--end::Chart-->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="side_area">
-                                        <div class="card card-flush h-100 shadow-sm">
-                                            <h1 class="page_h1">
-                                                <strong>테스트 FS남부</strong>
-                                                <span>( FS NAMBU)</span>
-                                            </h1>
-                                            <div class="px-4">
-                                                <h2 class="tit">Smoker Population</h2>
-                                                <p class="sub-tit">Total <strong>20,600</strong></p>
-
-                                                <div class="d-flex align-items-center flex-column mt-3 w-100">
-                                                    <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                                                        <span class="fw-bolder fs-8 text-gray-900">HnB 12,400</span>
-                                                        <span class="fw-bold fs-8 text-gray-500">62%</span>
-                                                    </div>
-                                                    <div class="h-8px mx-3 w-100 bg-light-success rounded mt-0">
-                                                        <div class="bg-success rounded h-8px" role="progressbar"
-                                                            style="width: 62%;" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex align-items-center flex-column mt-3 w-100 mb-0">
-                                                    <p class="fw-bolder fs-8 text-gray-900 mb-0">
-                                                        PMK <span class="text-primary">10,600</span> / KT&G <span
-                                                            class="text-danger">11,000</span>
-                                                    </p>
-                                                </div>
-
-                                                <div class="d-flex align-items-center flex-column mt-1 w-100">
-                                                    <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                                                        <span class="fw-bolder fs-8 text-gray-900">CC 55,400
-                                                        </span>
-                                                        <span class="fw-bold fs-8 text-gray-500">81%</span>
-                                                    </div>
-                                                    <div class="h-8px mx-3 w-100 bg-light-info rounded mt-0">
-                                                        <div class="bg-info rounded h-8px" role="progressbar"
-                                                            style="width: 81%;" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="separator separator-dashed my-5"></div>
-                                            <div class="chart_box">
-                                                <div class="chart_tit">#CVS by Age Group</div>
-                                                <div id="chartSmoker"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <!-- wrap_aside_area -->
+                            <div class="wrap_aside_area">
+                                <div class="btn_area_link">
+                                    <a href="#" class="btn btn-light-info">메인</a>
+                                    <a href="#" class="btn btn-light-info">지도</a>
+                                    <a href="#" class="btn btn-light-info">이벤트</a>
+                                    <a href="#" class="btn btn-light-info">장소 등록</a>
                                 </div>
-                                <div class="row">
-                                    <div class="event_area">
-                                        <div class="card card-flus shadow-sm">
-                                            <div class="box">
-                                                <div class="box-header">
-                                                    <h3 class="card-title">Event</h3>
-                                                    <div class="card-toolbar d-flex gap-1">
-                                                        <ul class="nav" id="" role="tablist">
-                                                            <li class="nav-item sm" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
-                                                                    data-bs-toggle="tab" href="#event_tab_01"
-                                                                    aria-selected="true" role="tab">Guided Sales
-                                                                    Event</a>
-                                                            </li>
-                                                            <li class="nav-item" role="presentation">
-                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                    data-bs-toggle="tab" href="#event_tab_02"
-                                                                    aria-selected="false" role="tab" tabindex="-1">Event
-                                                                    Location</a>
-                                                            </li>
+                                <div class="wrap_select">
+                                    <select class="form-select ico_home" aria-label="Select example">
+                                        <option>지점을 선택해 주세요</option>
+                                        <option value="1" selected>전체 지점</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_place_list">
+                                    <div class="control_box">
 
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="box-body"><!--begin::Chart-->
-                                                    <div class="tab-content">
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade active show" id="event_tab_01"
-                                                            role="tabpanel" aria-labelledby="">
-                                                            <div class="row">
-
-                                                                <div class="chart_area_donut">
-                                                                    <div class="chart_01">
-                                                                        <div class="chart_tit">Iluma COT
-                                                                            <strong>225</strong>
-                                                                        </div>
-                                                                        <div id="chartIluma"></div>
-                                                                    </div>
-                                                                    <div class="chart_02">
-                                                                        <div class="chart_tit">Service
-                                                                            <strong>1,330</strong>
-                                                                        </div>
-                                                                        <div id="chartService"></div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="chart_area_bar">
-                                                                    <div class="chart_tit">Monthly</div>
-                                                                    <div id="chartPeriod">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="history_area">
-                                                                    <div class="chart_tit">Event History</div>
-                                                                    <div class="event-history-block">
-                                                                        <ul class="history-list">
-                                                                            <li class="list-item">
-                                                                                <dl>
-                                                                                    <dt class="tit">
-
-                                                                                        C/U성수IS비즈타워 <span>
-                                                                                            <span>05.02</span>
-                                                                                        </span>
-                                                                                    </dt>
-                                                                                    <dd class="txt">
-                                                                                        <span> COT :
-                                                                                            8 </span>
-                                                                                        <span>
-                                                                                            Contact :
-                                                                                            27 </span>
-                                                                                        <span>
-                                                                                            Cate. moti. :
-                                                                                            20 </span>
-                                                                                        <span>
-                                                                                            G. trial :
-                                                                                            15 </span>
-                                                                                    </dd>
-
-                                                                                </dl>
-                                                                            </li>
-                                                                            <li class="list-item">
-                                                                                <dl>
-                                                                                    <dt class="tit">
-
-                                                                                        C/U성수W타워 <span>
-                                                                                            <span>04.18</span>
-                                                                                        </span>
-                                                                                    </dt>
-                                                                                    <dd class="txt"> <span> COT :
-                                                                                            15 </span>
-                                                                                        <span>
-                                                                                            Contact :
-                                                                                            28 </span>
-                                                                                        <span>
-                                                                                            Cate. moti. :
-                                                                                            23 </span>
-                                                                                        <span>
-                                                                                            G. trial :
-                                                                                            17 </span>
-                                                                                    </dd>
-
-                                                                                </dl>
-                                                                            </li>
-                                                                            <li class="list-item">
-                                                                                <dl>
-                                                                                    <dt class="tit">
-
-                                                                                        E/M성수한라 <span>
-                                                                                            <span>03.14</span>
-                                                                                        </span>
-                                                                                    </dt>
-                                                                                    <dd class="txt"> <span> COT :
-                                                                                            21 </span>
-                                                                                        <span>
-                                                                                            Contact :
-                                                                                            35 </span>
-                                                                                        <span>
-                                                                                            Cate. moti. :
-                                                                                            30 </span>
-                                                                                        <span>
-                                                                                            G. trial :
-                                                                                            26 </span>
-                                                                                    </dd>
-
-                                                                                </dl>
-                                                                            </li>
-                                                                            <li class="list-item">
-                                                                                <dl>
-                                                                                    <dt class="tit">
-
-                                                                                        K/7성수아크밸리 <span>
-                                                                                            <span>03.13</span>
-                                                                                        </span>
-                                                                                    </dt>
-                                                                                    <dd class="txt"> <span> COT :
-                                                                                            20 </span>
-                                                                                        <span>
-                                                                                            Contact :
-                                                                                            46 </span>
-                                                                                        <span>
-                                                                                            Cate. moti. :
-                                                                                            38 </span>
-                                                                                        <span>
-                                                                                            G. trial :
-                                                                                            29 </span>
-                                                                                    </dd>
-
-                                                                                </dl>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Tab pane-->
-                                                        <!--begin::Tab pane-->
-                                                        <div class="tab-pane fade" id="event_tab_02" role="tabpanel"
-                                                            aria-labelledby="">
-                                                            <div class="table-responsive">
-                                                                <table id="kt_datatable_zero_configuration"
-                                                                    class="table table-striped table-row-bordered">
-                                                                    
-                                                                    <thead>
-                                                                        <tr class="fw-semibold fs-6 text-muted">
-                                                                            <th>ID</th>
-                                                                            <th>장소명</th>
-                                                                            <th>지점명</th>
-                                                                            <th>현황</th>
-                                                                            <th>구분</th>
-                                                                            <th>카테고리</th>
-                                                                            <th>프로그램</th>
-                                                                            <th>채널</th>
-                                                                            <th>읍면동</th>
-                                                                            <th>위도</th>
-                                                                            <th>경도</th>
-
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        
-                                                                        <tr>
-                                                                            <td>101261</td>
-                                                                            <td>C/U성수IS비즈타워</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>CU</td>
-                                                                            <td>성수2가3동</td>
-                                                                            <td>37.548079</td>
-                                                                            <td>127.057553</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101262</td>
-                                                                            <td>C/U성수W타워</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>가두리</td>
-                                                                            <td>CU</td>
-                                                                            <td>성수2가3동</td>
-                                                                            <td>37.544769</td>
-                                                                            <td>127.062177</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101308</td>
-                                                                            <td>E/M성수한라</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>EM</td>
-                                                                            <td>성수2가1동</td>
-                                                                            <td>37.539733</td>
-                                                                            <td>127.05486</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101331</td>
-                                                                            <td>G/S성수SKV1</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>GS</td>
-                                                                            <td>성수2가3동</td>
-                                                                            <td>37.543671</td>
-                                                                            <td>127.05591</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101332</td>
-                                                                            <td>G/S성수디지털</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>GS</td>
-                                                                            <td>성수2가1동</td>
-                                                                            <td>37.541974</td>
-                                                                            <td>127.05358</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101333</td>
-                                                                            <td>G/S성수에이펙</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>가두리</td>
-                                                                            <td>GS</td>
-                                                                            <td>성수2가3동</td>
-                                                                            <td>37.54782</td>
-                                                                            <td>127.057148</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101334</td>
-                                                                            <td>G/S성수우림점</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>GS</td>
-                                                                            <td>성수2가3동</td>
-                                                                            <td>37.546372</td>
-                                                                            <td>127.063415</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101335</td>
-                                                                            <td>G/S성수유어스</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>GS</td>
-                                                                            <td>성수1가1동</td>
-                                                                            <td>37.542704</td>
-                                                                            <td>127.04514</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101375</td>
-                                                                            <td>K/7성수아크밸리</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>K7</td>
-                                                                            <td>성수2가3동</td>
-                                                                            <td>37.543916</td>
-                                                                            <td>127.0613</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>101518</td>
-                                                                            <td>성수동(SM)디타워서울포레스트</td>
-                                                                            <td> FS DONGBU
-                                                                            </td>
-                                                                            <td>진행중</td>
-                                                                            <td>실외</td>
-                                                                            <td>기타</td>
-                                                                            <td>일반</td>
-                                                                            <td>Other</td>
-                                                                            <td>성수1가1동</td>
-                                                                            <td>37.54436</td>
-                                                                            <td>127.04412</td>
-
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-
-                                                        </div>
-                                                        <!--end::Tab pane-->
-
-                                                    </div>
-                                                    <!--end::Chart-->
-                                                </div>
-                                            </div>
+                                        <h3 class="tit">
+                                            GSE 장소 관리
+                                        </h3>
+                                        <div class="btn_area">
+                                            <button class="btn btn-sm px-0"> 
+                                                <i class="ki-duotone ki-left fs-2 px-0 text-primary"></i> </a>
+                                            </button>
+                                            <button class="btn btn-sm  px-0 "> <i class="ki-duotone ki-right fs-2 px-0 text-primary"></i> </a>
+                                            </button>
                                         </div>
                                     </div>
+                                    <ul class="place_list">
+                                        <li>
+                                            <a href="">
+                                                <div class="tit">
+                                                    <div>
+                                                        <strong>C/U영등포세무서</strong>
+                                                        <span>( 101131 )</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="data">
+                                                    <span>생성일 06.18 지점 45</span>
+                                                    <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="tit">
+                                                    <div>
+                                                        <strong>C/U영등포세무서</strong>
+                                                        <span>( 101131 )</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="data">
+                                                    <span>생성일 06.18 지점 45</span>
+                                                    <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="tit">
+                                                    <div>
+                                                        <strong>C/U영등포세무서</strong>
+                                                        <span>( 101131 )</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="data">
+                                                    <span>생성일 06.18 지점 45</span>
+                                                    <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="tit">
+                                                    <div>
+                                                        <strong>C/U영등포세무서</strong>
+                                                        <span>( 101131 )</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="data">
+                                                    <span>생성일 06.18 지점 45</span>
+                                                    <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="tit">
+                                                    <div>
+                                                        <strong>C/U영등포세무서</strong>
+                                                        <span>( 101131 )</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="data">
+                                                    <span>생성일 06.18 지점 45</span>
+                                                    <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="tit">
+                                                    <div>
+                                                        <strong>C/U영등포세무서</strong>
+                                                        <span>( 101131 )</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="data">
+                                                    <span>생성일 06.18 지점 45</span>
+                                                    <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!--// wrap_dashboard -->
+                            <!--// wrap_aside_area -->
 
                             <!--end::Content container-->
                         </div>
@@ -743,624 +272,7 @@ License: For each use you must have a valid license purchased only from above li
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <!-- 샘플 맵  -->
-    <script>
-        am5.ready(function () {
-            // Create root element
-            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-            var root = am5.Root.new("chartdiv");
 
-            // Set themes
-            // https://www.amcharts.com/docs/v5/concepts/themes/
-            root.setThemes([am5themes_Animated.new(root)]);
-
-            // Create the map chart
-            // https://www.amcharts.com/docs/v5/charts/map-chart/
-            var chart = root.container.children.push(
-                am5map.MapChart.new(root, {
-                    panX: "translateX",
-                    panY: "translateY",
-                    projection: am5map.geoMercator(),
-                })
-            );
-
-            // Create main polygon series for countries
-            // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
-            var polygonSeries = chart.series.push(
-                am5map.MapPolygonSeries.new(root, {
-                    geoJSON: am5geodata_worldLow,
-                    exclude: ["AQ"],
-                })
-            );
-
-            polygonSeries.mapPolygons.template.setAll({
-                tooltipText: "{name}",
-                toggleKey: "active",
-                interactive: true,
-            });
-
-            polygonSeries.mapPolygons.template.states.create("hover", {
-                fill: root.interfaceColors.get("primaryButtonHover"),
-            });
-
-            polygonSeries.mapPolygons.template.states.create("active", {
-                fill: root.interfaceColors.get("primaryButtonHover"),
-            });
-
-            // US Series
-            // Create main polygon series for countries
-            // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
-            var polygonSeriesUS = chart.series.push(
-                am5map.MapPolygonSeries.new(root, {
-                    geoJSON: am5geodata_usaLow,
-                })
-            );
-
-            polygonSeriesUS.mapPolygons.template.setAll({
-                tooltipText: "{name}",
-                toggleKey: "active",
-                interactive: true,
-            });
-
-            var colors = am5.ColorSet.new(root, {});
-
-            polygonSeriesUS.mapPolygons.template.set("fill", colors.getIndex(3));
-
-            polygonSeriesUS.mapPolygons.template.states.create("hover", {
-                fill: root.interfaceColors.get("primaryButtonHover"),
-            });
-
-            polygonSeriesUS.mapPolygons.template.states.create("active", {
-                fill: root.interfaceColors.get("primaryButtonHover"),
-            });
-
-            // Add zoom control
-            // https://www.amcharts.com/docs/v5/charts/map-chart/map-pan-zoom/#Zoom_control
-            chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
-
-            // Set clicking on "water" to zoom out
-            chart.chartContainer.get("background").events.on("click", function () {
-                chart.goHome();
-            });
-
-            // Make stuff animate on load
-            chart.appear(1000, 100);
-        }); // end am5.ready()
-    </script>
-    <!--// 샘플 맵  -->
-    <!-- 샘플 차트 -->
-    <script>// Define the chart options
-        // line chart
-        var options1 = {
-            chart: {
-                type: 'line',
-                height: 220,
-
-                toolbar: {
-                    show: false // Disable toolbar to match Keen's style
-                }
-            },
-            series: [
-                {
-                    name: "PMK",
-                    data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
-                },
-                {
-                    name: "KT&G",
-                    data: [20, 30, 25, 45, 40, 55, 65, 80, 110] // Sample data points for Revenue
-                }
-            ],
-            xaxis: {
-                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            colors: ['#1f608c', '#17a689'], // Customize colors for each series
-            stroke: {
-                width: 3
-            }
-        };
-        var options2 = {
-            chart: {
-                type: 'line',
-                height: 220,
-
-                toolbar: {
-                    show: false // Disable toolbar to match Keen's style
-                }
-            },
-            series: [
-                {
-                    name: "TEREA",
-                    data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
-                },
-                {
-                    name: "MIX",
-                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
-                },
-
-                {
-                    name: "FIT",
-                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
-                },
-                {
-                    name: "NEO",
-                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
-                }
-            ],
-            xaxis: {
-                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            colors: ['#05998f', '#136dd4', '#cd13d4', '#e09c09'], // Customize colors for each series
-            stroke: {
-                width: 3
-            }
-        };
-        var options3 = {
-            chart: {
-                type: 'line',
-                height: 220,
-
-                toolbar: {
-                    show: false // Disable toolbar to match Keen's style
-                }
-            },
-            series: [
-
-                {
-                    name: "Compuable",
-                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
-                },
-
-                {
-                    name: "CC",
-                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
-                },
-                {
-                    name: "HnB",
-                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
-                }
-            ],
-            xaxis: {
-                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            colors: ['#8f8f8f', '#eb2f09', '#006a9c'], // Customize colors for each series
-            stroke: {
-                width: 3
-            }
-        };
-        // bar chart
-        var options21 = {
-            chart: {
-                type: 'bar',
-                height: 220,
-                stacked: true,
-                toolbar: {
-                    show: false // Disable toolbar to match Keen's style
-                }
-            },
-            series: [
-                {
-                    name: "PMK",
-                    data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
-                },
-                {
-                    name: "KT&G",
-                    data: [20, 30, 25, 45, 40, 55, 65, 80, 110] // Sample data points for Revenue
-                }
-            ],
-            xaxis: {
-                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            colors: ['#1f608c', '#17a689'], // Customize colors for each series
-            stroke: {
-                width: 0
-            }
-        };
-        var options22 = {
-            chart: {
-                type: 'bar',
-                height: 220,
-                stacked: true,
-
-                toolbar: {
-                    show: false // Disable toolbar to match Keen's style
-                }
-            },
-            series: [
-                {
-                    name: "TEREA",
-                    data: [30, 40, 35, 50, 49, 60, 70, 91, 125] // Sample data points for Sales
-                },
-                {
-                    name: "MIX",
-                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
-                },
-
-                {
-                    name: "FIT",
-                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
-                },
-                {
-                    name: "NEO",
-                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
-                }
-            ],
-            xaxis: {
-                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            colors: ['#05998f', '#136dd4', '#cd13d4', '#e09c09'], // Customize colors for each series
-            stroke: {
-                width: 0
-            }
-        };
-        var options23 = {
-            chart: {
-                type: 'bar',
-                height: 220,
-                stacked: true,
-
-                toolbar: {
-                    show: false // Disable toolbar to match Keen's style
-                }
-            },
-            series: [
-
-                {
-                    name: "Compuable",
-                    data: [20, 40, 65, 10, 49, 80, 20, 91, 125] // Sample data points for Sales
-                },
-
-                {
-                    name: "CC",
-                    data: [28, 38, 25, 45, 48, 55, 65, 88, 118] // Sample data points for Revenue
-                },
-                {
-                    name: "HnB",
-                    data: [24, 34, 25, 45, 44, 55, 65, 44, 118] // Sample data points for Revenue
-                }
-            ],
-            xaxis: {
-                categories: ['07-06', '07-20', '08-03', '08-17', '09-14', '09-28', '10-12', '10-26', '11-03'],
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: "#6e707e", // Font color that matches Keen's theme
-                        fontSize: '12px'
-                    }
-                }
-            },
-            colors: ['#8f8f8f', '#eb2f09', '#006a9c'], // Customize colors for each series
-            stroke: {
-                width: 0
-            }
-        };
-
-        // Render the chart
-        var chart1 = new ApexCharts(document.querySelector("#lineChartSOS"), options1);
-        var chart2 = new ApexCharts(document.querySelector("#lineChartSOm"), options2);
-        var chart3 = new ApexCharts(document.querySelector("#lineChartIndVol"), options3);
-        var chart21 = new ApexCharts(document.querySelector("#barchart1"), options21);
-        var chart22 = new ApexCharts(document.querySelector("#barchart2"), options22);
-        var chart23 = new ApexCharts(document.querySelector("#barchart3"), options23);
-        chart1.render();
-        chart2.render();
-        chart3.render();
-        chart21.render();
-        chart22.render();
-        chart23.render();
-    </script>
-    <!-- 샘플 차트 -->
-    <!-- smoker chart -->
-    <script>
-        var options = {
-            series: [46, 11, 47],
-            chart: {
-                type: 'donut'
-            },
-            colors: ['#67b6db', '#a367db', '#db67ce'],
-            plotOptions: {
-                pie: {
-                    donut: {
-                        size: '50%',
-                        labels: {
-                            show: true,
-                            name: {
-                                show: true,
-                                fontSize: '21px',
-                                color: '#333',
-                                offsetY: -10
-                            },
-                            value: {
-                                show: true,
-                                fontSize: '16px',
-                                color: '#666',
-                                offsetY: 10,
-                                formatter: function (val) {
-                                    return val + "%";
-                                }
-                            },
-                            total: {
-                                show: true,
-                                label: '#cvs 252',  // Custom center label text
-                                color: '#666',       // Custom color for the label
-                                fontSize: '16px',
-                                fontWeight: 600,
-                                formatter: function (w) {
-                                    return '';
-                                }
-
-                            }
-                        }
-                    }
-                }
-            },
-            labels: ['30대 #28', '20대 #116', '40대 #92'],
-            legend: {
-                position: 'bottom'
-            },
-            chart: {
-                type: 'donut',
-                width: '100%',
-                height: '300'
-            },
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chartSmoker"), options);
-        chart.render();
-    </script>
-    <!-- chartIluma -->
-    <script>
-        var options = {
-            series: [96, 4],
-            chart: {
-                type: 'donut'
-            },
-            colors: ['#67b6db', '#789dfa'],
-            plotOptions: {
-                pie: {
-                    donut: {
-                        size: '50%',
-                        labels: {
-                            show: true,
-                            name: {
-                                show: true,
-                                fontSize: '21px',
-                                color: '#333',
-                                offsetY: -10
-                            },
-                            value: {
-                                show: true,
-                                fontSize: '16px',
-                                color: '#666',
-                                offsetY: 10,
-                                formatter: function (val) {
-                                    return val + "%";
-                                }
-                            },
-                            total: {
-                                show: true,
-                                label: 'Iluma COT',  // Custom center label text
-                                color: '#666',       // Custom color for the label
-                                fontSize: '16px',
-                                fontWeight: 600,
-                                formatter: function (w) {
-                                    return w.globals.seriesTotals.reduce((a, b) => a + b, 0) + "%"
-                                }
-
-                            }
-                        }
-                    }
-                }
-            },
-            labels: ['Acquisition', 'Retention'],
-            legend: {
-                position: 'bottom',
-                formatter: function (seriesName, opts) {
-                    const value = opts.w.globals.series[opts.seriesIndex];
-                    return seriesName + " <span style='font-weight: bold;'>" + value + "%</span>";
-                }
-            },
-            chart: {
-                type: 'donut',
-                width: '100%',
-                height: '320px'
-            },
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chartIluma"), options);
-        chart.render();
-    </script>
-    <!-- // chartIluma -->
-    <!-- chartService -->
-    <script>
-        var options = {
-            series: [48, 32, 22],
-            chart: {
-                type: 'donut'
-            },
-            colors: ['#67b6db', '#789dfa', '#db67ce'],
-            plotOptions: {
-                pie: {
-                    donut: {
-                        size: '50%',
-                        labels: {
-                            show: true,
-                            name: {
-                                show: true,
-                                fontSize: '21px',
-                                color: '#333',
-                                offsetY: -10
-                            },
-                            value: {
-                                show: true,
-                                fontSize: '16px',
-                                color: '#666',
-                                offsetY: 10,
-                                formatter: function (val) {
-                                    return val + "%";
-                                }
-                            },
-                            total: {
-                                show: true,
-                                label: 'service',  // Custom center label text
-                                color: '#666',       // Custom color for the label
-                                fontSize: '16px',
-                                fontWeight: 600,
-                                formatter: function (w) {
-                                    return w.globals.seriesTotals.reduce((a, b) => a + b, 0) + "%"
-                                }
-
-                            }
-                        }
-                    }
-                }
-            },
-            labels: ['Contact', 'Category', 'Guide Trial'],
-            legend: {
-                position: 'bottom',
-                formatter: function (seriesName, opts) {
-                    const value = opts.w.globals.series[opts.seriesIndex];
-                    return seriesName + " <span style='font-weight: bold;'>" + value + "%</span>";
-                }
-            },
-            chart: {
-                type: 'donut',
-                width: '100%',
-                height: '320px'
-            },
-
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chartService"), options);
-        chart.render();
-    </script>
-    <!-- //chartService -->
-    <script>var options = {
-
-            stroke: {
-                colors: ["transparent"],
-                width: 1
-            },
-            series: [{
-                name: '#Event days',
-                data: [30, 40, 45, 50, 49, 60, 70]
-            }, {
-                name: 'Device Sales (unit : ea)',
-                data: [23, 33, 55, 22, 43, 33, 23]
-            }],
-            chart: {
-                type: 'bar',
-                height: '320px',
-                toolbar: {
-                    show: false,
-                }
-            },
-            plotOptions: {
-                bar: {
-                    horizontal: false,
-                    columnWidth: '40%',
-                    endingShape: 'rounded',
-                    borderRadius: 3,
-                    columnSpacing: '10px',
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            xaxis: {
-                categories: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
-            },
-            legend: {
-                position: 'top',
-            },
-            colors: ['#487bfa', '#51c97d'],
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chartPeriod"), options);
-        chart.render();</script>
-    <!-- data table -->
-    <script>
-        $("#kt_datatable_zero_configuration").DataTable(
-            
-           { searching: false,  "info": false, "lengthChange": false },
-        );
-    </script>
 
 
 
