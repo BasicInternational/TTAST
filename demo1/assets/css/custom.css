@@ -379,7 +379,7 @@
 	overflow: hidden;
 	width: 100vw;
 	padding-bottom: 16px;
-	padding: 10px 10px;
+	padding: 10px 10px 100px;
 	gap: 10px;
 	width: 100%;
 	box-sizing: border-box;
@@ -484,6 +484,12 @@
 	padding: 10px 20px 30px;
 }
 
+.wrap_dashboard .event_area .chart_area_donut .apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+	display: flex;
+	justify-content: flex-start;
+	min-height: 48px;
+}
+
 .wrap_dashboard .event_area .chart_area_donut > div {
 	width: 50%;
 	background: #fafafa;
@@ -523,3 +529,117 @@
 	font-weight: 600;
 	color: #666;
 }
+
+.wrap_dashboard .history_area {
+	width: 20%;
+	padding: 10px 20px 30px;
+}
+
+.wrap_dashboard .history_area .chart_tit {
+	width: 100%;
+	padding: 20px 10px 10px;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #666;
+}
+
+.history-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.history-list .list-item {
+	position: relative;
+	padding-left: 28px;
+	font-size: 12px;
+	line-height: 100%;
+	padding-bottom: 16px;
+}
+
+.history-list .list-item:before {
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: #6966E9;
+	position: absolute;
+	left: 7px;
+	top: 0;
+}
+
+.history-list .list-item:after {
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	border: 3px solid #EB5757;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.history-list .list-item:after {
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	border: 3px solid #EB5757;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.history-list .list-item:last-child:before {
+	height: 12px;
+}
+
+.history-list .list-item:nth-child(2n):after {
+	border: 3px solid #25D0B1;
+}
+
+.history-list .list-item:nth-child(3n):after {
+	border: 3px solid #56CCF2;
+}
+
+.history-list .list-item:nth-child(4n):after {
+	border: 3px solid #FDCD3D;
+}
+
+.history-list .list-item .tit {
+	font-size: 1.1rem;
+	color: #333;
+	line-height: 1.5;
+}
+
+.history-list .list-item .txt {
+	display: flex;
+	line-height: 1.2;
+	color: #444;
+	margin-top: 5px;
+	font-size: 1rem;
+	word-break: keep-all;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 2px 4px;
+	justify-content: flex-start;
+}
+
+.history-list .list-item .tit span {
+	margin-left: 5px;
+	color: #666;
+}
+
+.history-list .list-item .txt span:after {
+	content: '/';
+	color: #aaa;
+}
+
+.history-list .list-item .txt span:last-child:after {
+	content: '';
+}
+table td{word-break:keep-all}
