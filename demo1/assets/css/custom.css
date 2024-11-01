@@ -384,7 +384,9 @@
 	width: 100%;
 	box-sizing: border-box;
 }
-
+.wrap_dashboard .row {
+	--bs-gutter-x: 8px;
+}
 .wrap_dashboard .map_area {
 	width: 40%;
 	display: flex;
