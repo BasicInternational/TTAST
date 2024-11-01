@@ -655,13 +655,13 @@ table td {
 }
 
 .wrap_aside_area {
-	min-width: 400px;
-	width: 40%;
+	width: 400px;
 	background: #fff;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	padding: 20px 20px;
+	box-shadow: var(--bs-box-shadow-sm);
 }
 
 .wrap_aside_area .btn_area_link {
@@ -683,7 +683,7 @@ table td {
 	display: flex;
 	align-items: center;
 	margin-top: 20px;
-	padding: 0 15px;
+	padding: 0;
 	justify-content: space-between;
 }
 
@@ -698,12 +698,14 @@ table td {
 	background: rgb(233 243 255 / 1);
 	width: 38px;
 }
+
 .wrap_aside_area .control_box .btn_area .btn:hover {
 	background-color: rgb(233 243 255 / 30%);
 }
+
 .wrap_aside_area .wrap_place_list .place_list {
 	padding: 0;
-	margin: 5px 10px;
+	margin: 5px 0px;
 	list-style: none;
 }
 
@@ -759,4 +761,5 @@ table td {
 	word-break: keep-all;
 	font-weight: 400;
 	color: #333;
+	font-size: 1rem;
 }
