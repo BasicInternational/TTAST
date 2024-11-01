@@ -316,11 +316,12 @@ License: For each use you must have a valid license purchased only from above li
                                             </div>
                                             <div class="d-flex align-items-center flex-column mt-3 w-100 mb-0">
                                                 <p class="fw-bolder fs-8 text-gray-900 mb-0">
-                                                    PMK <span class="text-primary">10,600</span> / KT&G <span class="text-danger">11,000</span>
+                                                    PMK <span class="text-primary">10,600</span> / KT&G <span
+                                                        class="text-danger">11,000</span>
                                                 </p>
                                             </div>
 
-                                            <div class="d-flex align-items-center flex-column mt-3 w-100">
+                                            <div class="d-flex align-items-center flex-column mt-1 w-100">
                                                 <div class="d-flex justify-content-between w-100 mt-auto mb-2">
                                                     <span class="fw-bolder fs-8 text-gray-900">CC 55,400
                                                     </span>
@@ -333,8 +334,11 @@ License: For each use you must have a valid license purchased only from above li
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="separator separator-dashed my-3"></div>
-                                        
+                                        <div class="separator separator-dashed my-5"></div>
+                                        <div class="chart_box">
+                                            <div class="chat_tit">#CVS by Age Group</div>
+                                            <div id="chartSmoker"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -361,8 +365,7 @@ License: For each use you must have a valid license purchased only from above li
                             <!--begin::Copyright-->
                             <div class="text-gray-900 order-2 order-md-1">
                                 <span class="text-muted fw-semibold me-1">2024&copy;</span>
-                                <a href="" target="_blank" class="text-gray-600 text-hover-primary">Iqos Territory
-                                    Target Activities
+                                <a href="" target="_blank" class="text-gray-600 text-hover-primary"> Target Activities
                                     System Tool</a>
                             </div>
                             <!--end::Copyright-->
@@ -406,6 +409,11 @@ License: For each use you must have a valid license purchased only from above li
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!-- 샘플 맵  -->
     <script>
         am5.ready(function () {
             // Create root element
@@ -491,7 +499,6 @@ License: For each use you must have a valid license purchased only from above li
     </script>
     <!--// 샘플 맵  -->
     <!-- 샘플 차트 -->
-
     <script>// Define the chart options
         // line chart
         var options1 = {
@@ -788,6 +795,78 @@ License: For each use you must have a valid license purchased only from above li
         chart22.render();
         chart23.render();
     </script>
+    <!-- 샘플 차트 -->
+    <!-- smoker chart -->
+    <script>
+        var options = {
+            series: [46, 11, 47],
+            chart: {
+                type: 'donut'
+            },
+            colors: ['#67b6db', '#a367db', '#db67ce'],
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '50%',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true,
+                                fontSize: '21px',
+                                color: '#333',
+                                offsetY: -10
+                            },
+                            value: {
+                                show: true,
+                                fontSize: '16px',
+                                color: '#666',
+                                offsetY: 10,
+                                formatter: function (val) {
+                                    return val + "%";
+                                }
+                            },
+                            total: {
+                                show: true,
+                                label: '#cvs 252',  // Custom center label text
+                                color: '#666',       // Custom color for the label
+                                fontSize: '16px',
+                                fontWeight: 600,
+                                formatter: function (w) {
+                                    return '';
+                                }
+
+                            }
+                        }
+                    }
+                }
+            },
+            labels: ['30대 #28', '20대 #116', '40대 #92'],
+            legend: {
+                position: 'bottom'
+            },
+            chart: {
+                type: 'donut',
+                width: '100%',
+                height: 274
+            },
+            // responsive: [{
+            //     breakpoint: 480,
+            //     options: {
+            //         chart: {
+            //             width: 300
+            //         },
+            //         legend: {
+            //             position: 'bottom'
+            //         }
+            //     }
+            // }]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartSmoker"), options);
+        chart.render();
+    </script>
+
+    <!--// smoker chart -->
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
 </body>
