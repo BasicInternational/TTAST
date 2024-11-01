@@ -669,7 +669,7 @@ table td {
 	position: fixed;
 	top: 0;
 	bottom: 0;
-	padding: 20px 20px;
+	padding: 26px 20px 10px;
 	box-shadow: var(--bs-box-shadow-sm);
 }
 
@@ -782,4 +782,6 @@ table td {
 
 .wrap_form_area .card {
 	height: calc(100vh - 40px);
+	max-width: 90%;
+	margin: 0 auto;
 }
