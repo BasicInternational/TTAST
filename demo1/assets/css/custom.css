@@ -384,9 +384,11 @@
 	width: 100%;
 	box-sizing: border-box;
 }
+
 .wrap_dashboard .row {
 	--bs-gutter-x: 8px;
 }
+
 .wrap_dashboard .map_area {
 	width: 40%;
 	display: flex;
@@ -534,7 +536,10 @@
 
 .wrap_dashboard .history_area {
 	width: 20%;
-	padding: 10px 20px 30px;
+	padding: 0px 20px 0px;
+	border-left: 1px dashed #EEF;
+	margin-bottom: 40px;
+	margin-top: 20px;
 }
 
 .wrap_dashboard .history_area .chart_tit {
@@ -644,4 +649,7 @@
 .history-list .list-item .txt span:last-child:after {
 	content: '';
 }
-table td{word-break:keep-all}
+
+table td {
+	word-break: keep-all
+}
