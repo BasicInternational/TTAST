@@ -129,215 +129,338 @@ License: For each use you must have a valid license purchased only from above li
                         <div id="kt_app_content" class="app-content flex-column-fluid">
                             <!--begin::Content container-->
                             <!-- wrap_dashboard -->
-                            <div class="wrap_dashboard row">
-                                <div class="map_area">
-                                    <div class="card  card-flush w-100">
-                                        <div class="card-header">
-                                            <h3 class="card-title fw-bold">안양시만안구</h3>
-                                            <div class="card-toolbar">
-                                                <button type="button" class="btn btn-sm btn-light-primary ">
-                                                    Full Map
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="card-body ">
-                                            <div class="map">
-                                                <!-- sample chart -->
-                                                <div id="chartdiv" style="height: 100%"></div>
-                                                <script
-                                                    src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
-                                                <!--// sample chart -->
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <div class="dash-btn-group">
-                                                <a href="#" class="btn btn-light-info btn-sm">Info</a>
-                                                <button type="button" class="btn btn-light-info btn-sm"
-                                                    id="btn_dashboard_2">Ciga</button>
-                                                <button type="button" class="btn btn-light-info btn-sm"
-                                                    id="btn_dashboard_3">HnB</button>
-                                                <button type="button" class="btn btn-light-info btn-sm"
-                                                    id="btn_dashboard_4">CC</button>
-                                                <button type="button" class="btn btn-light-info btn-sm"
-                                                    id="btn_dashboard_5">CVS</button>
-                                                <button type="button" class="btn btn-light-info btn-sm"
-                                                    id="btn_dashboard_7">Tier</button>
-                                                <button type="button" class="btn btn-light-info btn-sm"
-                                                    id="btn_dashboard_6">Device</button>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="chart_area">
-                                    <div class="card card-flush w-100 shadow-sm">
-                                        <div class="box">
-
-                                            <div class="box-header">
-                                                <h3 class="card-title">Consumable Unit : %, Tho Stick</h3>
-                                                <div class="card-toolbar d-flex gap-1">
-                                                    <ul class="nav" id="" role="tablist">
-                                                        <li class="nav-item sm" role="presentation">
-                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
-                                                                data-bs-toggle="tab" href="#linechart_01"
-                                                                aria-selected="true" role="tab">SoS</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                data-bs-toggle="tab" href="#linechart_02"
-                                                                aria-selected="false" role="tab" tabindex="-1">SoM</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                data-bs-toggle="tab" href="#linechart_03"
-                                                                aria-selected="false" role="tab" tabindex="-1">Ind
-                                                                Vol</a>
-                                                        </li>
-                                                    </ul>
+                            <div class="wrap_dashboard">
+                                <div class="row">
+                                    <div class="map_area">
+                                        <div class="card  card-flush w-100">
+                                            <div class="card-header">
+                                                <h3 class="card-title fw-bold">안양시만안구</h3>
+                                                <div class="card-toolbar">
+                                                    <button type="button" class="btn btn-sm btn-light-primary ">
+                                                        Full Map
+                                                    </button>
                                                 </div>
                                             </div>
-                                            <div class="box-body"><!--begin::Chart-->
-                                                <div class="tab-content">
-                                                    <!--begin::Tab pane-->
-                                                    <div class="tab-pane fade active show" id="linechart_01"
-                                                        role="tabpanel" aria-labelledby="">
-
-                                                        <!--begin::Chart-->
-                                                        <div id="lineChartSOS" style="height: 225px;"></div>
-                                                        <!--end::Chart-->
-                                                    </div>
-                                                    <!--end::Tab pane-->
-                                                    <!--begin::Tab pane-->
-                                                    <div class="tab-pane fade" id="linechart_02" role="tabpanel"
-                                                        aria-labelledby="">
-                                                        <!--begin::Chart-->
-                                                        <div id="lineChartSOm" style="height: 225px;"></div>
-                                                        <!--end::Chart-->
-
-                                                    </div>
-                                                    <!--end::Tab pane-->
-                                                    <!--begin::Tab pane-->
-                                                    <div class="tab-pane fade" id="linechart_03" role="tabpanel"
-                                                        aria-labelledby="">
-                                                        <!--begin::Chart-->
-                                                        <div id="lineChartIndVol" style="height: 225px;"></div>
-                                                        <!--end::Chart-->
-
-                                                    </div>
-                                                    <!--end::Tab pane-->
-                                                </div>
-                                                <!--end::Chart-->
-                                            </div>
-                                        </div>
-                                        <div class="box">
-
-                                            <div class="box-header">
-                                                <h3 class="card-title">Device COT
-                                                </h3>
-                                                <div class="card-toolbar d-flex gap-1">
-                                                    <ul class="nav" id="" role="tablist">
-                                                        <li class="nav-item sm" role="presentation">
-                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
-                                                                data-bs-toggle="tab" href="#barchart_01"
-                                                                aria-selected="true" role="tab">Channel</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                data-bs-toggle="tab" href="#barchart_02"
-                                                                aria-selected="false" role="tab"
-                                                                tabindex="-1">Program</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
-                                                                data-bs-toggle="tab" href="#barchart_03"
-                                                                aria-selected="false" role="tab" tabindex="-1">CVS
-                                                                Vol</a>
-                                                        </li>
-                                                    </ul>
+                                            <div class="card-body ">
+                                                <div class="map">
+                                                    <!-- sample chart -->
+                                                    <div id="chartdiv" style="height: 100%"></div>
+                                                    <script
+                                                        src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+                                                    <!--// sample chart -->
                                                 </div>
                                             </div>
-                                            <div class="box-body"><!--begin::Chart-->
-                                                <div class="tab-content">
-                                                    <!--begin::Tab pane-->
-                                                    <div class="tab-pane fade active show" id="barchart_01"
-                                                        role="tabpanel" aria-labelledby="">
+                                            <div class="card-footer">
+                                                <div class="dash-btn-group">
+                                                    <a href="#" class="btn btn-light-info btn-sm">Info</a>
+                                                    <button type="button" class="btn btn-light-info btn-sm"
+                                                        id="btn_dashboard_2">Ciga</button>
+                                                    <button type="button" class="btn btn-light-info btn-sm"
+                                                        id="btn_dashboard_3">HnB</button>
+                                                    <button type="button" class="btn btn-light-info btn-sm"
+                                                        id="btn_dashboard_4">CC</button>
+                                                    <button type="button" class="btn btn-light-info btn-sm"
+                                                        id="btn_dashboard_5">CVS</button>
+                                                    <button type="button" class="btn btn-light-info btn-sm"
+                                                        id="btn_dashboard_7">Tier</button>
+                                                    <button type="button" class="btn btn-light-info btn-sm"
+                                                        id="btn_dashboard_6">Device</button>
 
-                                                        <!--begin::Chart-->
-                                                        <div id="barchart1" style="height: 225px;"></div>
-                                                        <!--end::Chart-->
-                                                    </div>
-                                                    <!--end::Tab pane-->
-                                                    <!--begin::Tab pane-->
-                                                    <div class="tab-pane fade" id="barchart_02" role="tabpanel"
-                                                        aria-labelledby="">
-                                                        <!--begin::Chart-->
-                                                        <div id="barchart2" style="height: 225px;"></div>
-                                                        <!--end::Chart-->
-
-                                                    </div>
-                                                    <!--end::Tab pane-->
-                                                    <!--begin::Tab pane-->
-                                                    <div class="tab-pane fade" id="barchart_03" role="tabpanel"
-                                                        aria-labelledby="">
-                                                        <!--begin::Chart-->
-                                                        <div id="barchart3" style="height: 225px;"></div>
-                                                        <!--end::Chart-->
-
-                                                    </div>
-                                                    <!--end::Tab pane-->
                                                 </div>
-                                                <!--end::Chart-->
+
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="chart_area">
+                                        <div class="card card-flush w-100 shadow-sm">
+                                            <div class="box">
 
-                                </div>
-                                <div class="side_area">
-                                    <div class="card card-flush h-100 shadow-sm">
-                                        <h1 class="page_h1">
-                                            <strong>테스트 FS남부</strong>
-                                            <span>( FS NAMBU)</span>
-                                        </h1>
-                                        <div class="px-4">
-                                            <h2 class="tit">Smoker Population</h2>
-                                            <p class="sub-tit">Total <strong>20,600</strong></p>
-
-                                            <div class="d-flex align-items-center flex-column mt-3 w-100">
-                                                <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                                                    <span class="fw-bolder fs-8 text-gray-900">HnB 12,400</span>
-                                                    <span class="fw-bold fs-8 text-gray-500">62%</span>
+                                                <div class="box-header">
+                                                    <h3 class="card-title">Consumable Unit : %, Tho Stick</h3>
+                                                    <div class="card-toolbar d-flex gap-1">
+                                                        <ul class="nav" id="" role="tablist">
+                                                            <li class="nav-item sm" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
+                                                                    data-bs-toggle="tab" href="#linechart_01"
+                                                                    aria-selected="true" role="tab">SoS</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                    data-bs-toggle="tab" href="#linechart_02"
+                                                                    aria-selected="false" role="tab"
+                                                                    tabindex="-1">SoM</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                    data-bs-toggle="tab" href="#linechart_03"
+                                                                    aria-selected="false" role="tab" tabindex="-1">Ind
+                                                                    Vol</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                <div class="h-8px mx-3 w-100 bg-light-success rounded mt-0">
-                                                    <div class="bg-success rounded h-8px" role="progressbar"
-                                                        style="width: 62%;" aria-valuenow="50" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
+                                                <div class="box-body"><!--begin::Chart-->
+                                                    <div class="tab-content">
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade active show" id="linechart_01"
+                                                            role="tabpanel" aria-labelledby="">
+
+                                                            <!--begin::Chart-->
+                                                            <div id="lineChartSOS" style="height: 225px;"></div>
+                                                            <!--end::Chart-->
+                                                        </div>
+                                                        <!--end::Tab pane-->
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade" id="linechart_02" role="tabpanel"
+                                                            aria-labelledby="">
+                                                            <!--begin::Chart-->
+                                                            <div id="lineChartSOm" style="height: 225px;"></div>
+                                                            <!--end::Chart-->
+
+                                                        </div>
+                                                        <!--end::Tab pane-->
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade" id="linechart_03" role="tabpanel"
+                                                            aria-labelledby="">
+                                                            <!--begin::Chart-->
+                                                            <div id="lineChartIndVol" style="height: 225px;"></div>
+                                                            <!--end::Chart-->
+
+                                                        </div>
+                                                        <!--end::Tab pane-->
+                                                    </div>
+                                                    <!--end::Chart-->
                                                 </div>
                                             </div>
-                                            <div class="d-flex align-items-center flex-column mt-3 w-100 mb-0">
-                                                <p class="fw-bolder fs-8 text-gray-900 mb-0">
-                                                    PMK <span class="text-primary">10,600</span> / KT&G <span
-                                                        class="text-danger">11,000</span>
-                                                </p>
-                                            </div>
+                                            <div class="separator separator-dashed my-5"></div>
+                                            <div class="box">
 
-                                            <div class="d-flex align-items-center flex-column mt-1 w-100">
-                                                <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                                                    <span class="fw-bolder fs-8 text-gray-900">CC 55,400
-                                                    </span>
-                                                    <span class="fw-bold fs-8 text-gray-500">81%</span>
+                                                <div class="box-header">
+                                                    <h3 class="card-title">Device COT
+                                                    </h3>
+                                                    <div class="card-toolbar d-flex gap-1">
+                                                        <ul class="nav" id="" role="tablist">
+                                                            <li class="nav-item sm" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
+                                                                    data-bs-toggle="tab" href="#barchart_01"
+                                                                    aria-selected="true" role="tab">Channel</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                    data-bs-toggle="tab" href="#barchart_02"
+                                                                    aria-selected="false" role="tab"
+                                                                    tabindex="-1">Program</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                    data-bs-toggle="tab" href="#barchart_03"
+                                                                    aria-selected="false" role="tab" tabindex="-1">CVS
+                                                                    Vol</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                <div class="h-8px mx-3 w-100 bg-light-info rounded mt-0">
-                                                    <div class="bg-info rounded h-8px" role="progressbar"
-                                                        style="width: 81%;" aria-valuenow="50" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
+                                                <div class="box-body"><!--begin::Chart-->
+                                                    <div class="tab-content">
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade active show" id="barchart_01"
+                                                            role="tabpanel" aria-labelledby="">
+
+                                                            <!--begin::Chart-->
+                                                            <div id="barchart1" style="height: 225px;"></div>
+                                                            <!--end::Chart-->
+                                                        </div>
+                                                        <!--end::Tab pane-->
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade" id="barchart_02" role="tabpanel"
+                                                            aria-labelledby="">
+                                                            <!--begin::Chart-->
+                                                            <div id="barchart2" style="height: 225px;"></div>
+                                                            <!--end::Chart-->
+
+                                                        </div>
+                                                        <!--end::Tab pane-->
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade" id="barchart_03" role="tabpanel"
+                                                            aria-labelledby="">
+                                                            <!--begin::Chart-->
+                                                            <div id="barchart3" style="height: 225px;"></div>
+                                                            <!--end::Chart-->
+
+                                                        </div>
+                                                        <!--end::Tab pane-->
+                                                    </div>
+                                                    <!--end::Chart-->
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="separator separator-dashed my-5"></div>
-                                        <div class="chart_box">
-                                            <div class="chat_tit">#CVS by Age Group</div>
-                                            <div id="chartSmoker"></div>
+
+                                    </div>
+                                    <div class="side_area">
+                                        <div class="card card-flush h-100 shadow-sm">
+                                            <h1 class="page_h1">
+                                                <strong>테스트 FS남부</strong>
+                                                <span>( FS NAMBU)</span>
+                                            </h1>
+                                            <div class="px-4">
+                                                <h2 class="tit">Smoker Population</h2>
+                                                <p class="sub-tit">Total <strong>20,600</strong></p>
+
+                                                <div class="d-flex align-items-center flex-column mt-3 w-100">
+                                                    <div class="d-flex justify-content-between w-100 mt-auto mb-2">
+                                                        <span class="fw-bolder fs-8 text-gray-900">HnB 12,400</span>
+                                                        <span class="fw-bold fs-8 text-gray-500">62%</span>
+                                                    </div>
+                                                    <div class="h-8px mx-3 w-100 bg-light-success rounded mt-0">
+                                                        <div class="bg-success rounded h-8px" role="progressbar"
+                                                            style="width: 62%;" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center flex-column mt-3 w-100 mb-0">
+                                                    <p class="fw-bolder fs-8 text-gray-900 mb-0">
+                                                        PMK <span class="text-primary">10,600</span> / KT&G <span
+                                                            class="text-danger">11,000</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="d-flex align-items-center flex-column mt-1 w-100">
+                                                    <div class="d-flex justify-content-between w-100 mt-auto mb-2">
+                                                        <span class="fw-bolder fs-8 text-gray-900">CC 55,400
+                                                        </span>
+                                                        <span class="fw-bold fs-8 text-gray-500">81%</span>
+                                                    </div>
+                                                    <div class="h-8px mx-3 w-100 bg-light-info rounded mt-0">
+                                                        <div class="bg-info rounded h-8px" role="progressbar"
+                                                            style="width: 81%;" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="separator separator-dashed my-5"></div>
+                                            <div class="chart_box">
+                                                <div class="chart_tit">#CVS by Age Group</div>
+                                                <div id="chartSmoker"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="event_area">
+                                        <div class="card card-flus shadow-sm">
+                                            <div class="box">
+                                                <div class="box-header">
+                                                    <h3 class="card-title">Event</h3>
+                                                    <div class="card-toolbar d-flex gap-1">
+                                                        <ul class="nav" id="" role="tablist">
+                                                            <li class="nav-item sm" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1 active"
+                                                                    data-bs-toggle="tab" href="#event_tab_01"
+                                                                    aria-selected="true" role="tab">Guided Sales
+                                                                    Event</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link btn btn-sm btn-light-primary  btn-active btn-active-light me-1"
+                                                                    data-bs-toggle="tab" href="#event_tab_02"
+                                                                    aria-selected="false" role="tab" tabindex="-1">Event
+                                                                    Location</a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="box-body"><!--begin::Chart-->
+                                                    <div class="tab-content">
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade active show" id="event_tab_01"
+                                                            role="tabpanel" aria-labelledby="">
+                                                            <div class="row">
+
+                                                                <div class="chart_area_donut">
+                                                                    <div class="chart_01">
+                                                                        <div class="chart_tit">Iluma COT
+                                                                            <strong>225</strong>
+                                                                        </div>
+                                                                        <div id="chartIluma"></div>
+                                                                    </div>
+                                                                    <div class="chart_02">
+                                                                        <div class="chart_tit">Service
+                                                                            <strong>1,330</strong>
+                                                                        </div>
+                                                                        <div id="chartService"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="chart_area_bar">
+                                                                    <div class="chart_tit">Monthly</div>
+                                                                    <div id="chartPeriod">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="history_area"></div>
+                                                            </div>
+                                                        </div>
+                                                        <!--end::Tab pane-->
+                                                        <!--begin::Tab pane-->
+                                                        <div class="tab-pane fade" id="event_tab_02" role="tabpanel"
+                                                            aria-labelledby="">
+                                                            <div class="table-responsive">
+                                                                <table id="kt_datatable_zero_configuration"
+                                                                    class="table table-row-bordered gy-5">
+                                                                    <thead>
+                                                                        <tr class="fw-semibold fs-6 text-muted">
+                                                                            <th>Name</th>
+                                                                            <th>Position</th>
+                                                                            <th>Office</th>
+                                                                            <th>Age</th>
+                                                                            <th>Start date</th>
+                                                                            <th>Salary</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Tiger Nixon</td>
+                                                                            <td>System Architect</td>
+                                                                            <td>Edinburgh</td>
+                                                                            <td>61</td>
+                                                                            <td>2011/04/25</td>
+                                                                            <td>$320,800</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Garrett Winters</td>
+                                                                            <td>Accountant</td>
+                                                                            <td>Tokyo</td>
+                                                                            <td>63</td>
+                                                                            <td>2011/07/25</td>
+                                                                            <td>$170,750</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Ashton Cox</td>
+                                                                            <td>Junior Technical Author</td>
+                                                                            <td>San Francisco</td>
+                                                                            <td>66</td>
+                                                                            <td>2009/01/12</td>
+                                                                            <td>$86,000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                    <tfoot>
+                                                                        <tr>
+                                                                            <th>Name</th>
+                                                                            <th>Position</th>
+                                                                            <th>Office</th>
+                                                                            <th>Age</th>
+                                                                            <th>Start date</th>
+                                                                            <th>Salary</th>
+                                                                        </tr>
+                                                                    </tfoot>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                        <!--end::Tab pane-->
+
+                                                    </div>
+                                                    <!--end::Chart-->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -831,26 +954,191 @@ License: For each use you must have a valid license purchased only from above li
             chart: {
                 type: 'donut',
                 width: '100%',
-                height: 274
+                height: '300'
             },
-            // responsive: [{
-            //     breakpoint: 480,
-            //     options: {
-            //         chart: {
-            //             width: 300
-            //         },
-            //         legend: {
-            //             position: 'bottom'
-            //         }
-            //     }
-            // }]
         };
 
         var chart = new ApexCharts(document.querySelector("#chartSmoker"), options);
         chart.render();
     </script>
+    <!-- chartIluma -->
+    <script>
+        var options = {
+            series: [96, 4],
+            chart: {
+                type: 'donut'
+            },
+            colors: ['#67b6db', '#789dfa'],
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '50%',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true,
+                                fontSize: '21px',
+                                color: '#333',
+                                offsetY: -10
+                            },
+                            value: {
+                                show: true,
+                                fontSize: '16px',
+                                color: '#666',
+                                offsetY: 10,
+                                formatter: function (val) {
+                                    return val + "%";
+                                }
+                            },
+                            total: {
+                                show: true,
+                                label: 'Iluma COT',  // Custom center label text
+                                color: '#666',       // Custom color for the label
+                                fontSize: '16px',
+                                fontWeight: 600,
+                                formatter: function (w) {
+                                    return w.globals.seriesTotals.reduce((a, b) => a + b, 0) + "%"
+                                }
 
-    <!--// smoker chart -->
+                            }
+                        }
+                    }
+                }
+            },
+            labels: ['Acquisition', 'Retention'],
+            legend: {
+                position: 'bottom',
+                formatter: function (seriesName, opts) {
+                    const value = opts.w.globals.series[opts.seriesIndex];
+                    return seriesName + " <span style='font-weight: bold;'>" + value + "%</span>";
+                }
+            },
+            chart: {
+                type: 'donut',
+                width: '100%',
+                height: '300'
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartIluma"), options);
+        chart.render();
+    </script>
+    <!-- // chartIluma -->
+    <!-- chartService -->
+    <script>
+        var options = {
+            series: [48, 32, 22],
+            chart: {
+                type: 'donut'
+            },
+            colors: ['#67b6db', '#789dfa', '#db67ce'],
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '50%',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true,
+                                fontSize: '21px',
+                                color: '#333',
+                                offsetY: -10
+                            },
+                            value: {
+                                show: true,
+                                fontSize: '16px',
+                                color: '#666',
+                                offsetY: 10,
+                                formatter: function (val) {
+                                    return val + "%";
+                                }
+                            },
+                            total: {
+                                show: true,
+                                label: 'service',  // Custom center label text
+                                color: '#666',       // Custom color for the label
+                                fontSize: '16px',
+                                fontWeight: 600,
+                                formatter: function (w) {
+                                    return w.globals.seriesTotals.reduce((a, b) => a + b, 0) + "%"
+                                }
+
+                            }
+                        }
+                    }
+                }
+            },
+            labels: ['Contact', 'Category', 'Guide Trial'],
+            legend: {
+                position: 'bottom',
+                formatter: function (seriesName, opts) {
+                    const value = opts.w.globals.series[opts.seriesIndex];
+                    return seriesName + " <span style='font-weight: bold;'>" + value + "%</span>";
+                }
+            },
+            chart: {
+                type: 'donut',
+                width: '100%',
+                height: 274
+            },
+            
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartService"), options);
+        chart.render();
+    </script>
+    <!-- //chartService -->
+    <script>var options = {
+        
+            stroke: {
+                colors: ["transparent"],
+                width: 1
+            },
+            series: [{
+                name: '#Event days',
+                data: [30, 40, 45, 50, 49, 60, 70]
+            }, {
+                name: 'Device Sales (unit : ea)',
+                data: [23, 33, 55, 22, 43, 33, 23]
+            }],
+            chart: {
+                type: 'bar',
+                height: 400,
+                 toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '40%',
+                    endingShape: 'rounded',
+                    borderRadius: 3,
+                    columnSpacing: '10px',
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            xaxis: {
+                categories: ['1월', '2월', '3월', '4월', '5월', '6월', '7월','8월','9월','10월','11월','12월']
+            },
+            legend: {
+                position: 'top',
+            },
+            colors: ['#487bfa', '#51c97d'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chartPeriod"), options);
+        chart.render();</script>
+    <!-- data table -->
+    <script>
+        $("#kt_datatable_zero_configuration").DataTable();
+    </script>
+
+
+
+
     <!--end::Custom Javascript-->
     <!--end::Javascript-->
 </body>
