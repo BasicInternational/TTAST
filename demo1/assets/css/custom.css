@@ -782,6 +782,12 @@ table td {
 
 .wrap_form_area .card {
 	height: calc(100vh - 40px);
-	max-width: 90%;
+	max-width: 920px;
 	margin: 0 auto;
 }
+
+.card-body.form .row {
+	margin-bottom: 10px;
+}
+
+.wrap_input{}
