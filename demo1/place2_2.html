@@ -222,18 +222,10 @@ License: For each use you must have a valid license purchased only from above li
                             <div class="wrap_form_area">
                                 <div class="card shadow-sm">
                                     <div class="card-header">
-                                        <h3 class="card-title">[ 장소 수정 ] C/U마곡웰튼 (코드 : 101125 )</h3>
+                                        <h3 class="card-title">신규 장소 등록 FS NAMBU / 지점코드 : 45 / test45@pmi.com / 테스트 FS남부
+                                        </h3>
                                         <div class="card-toolbar gap-2">
-                                            <input class="a11y" id="uplaodFile" type="file"
-                                                accept=".png, .jpg, .jpeg" />
-                                            <label for="uplaodFile" type="button" class="btn btn-success"
-                                                data-bs-toggle="tooltip" data-bs-placement="top"
-                                                data-bs-custom-class="tooltip-inverse"
-                                                title="* 사진을 업로드하면 자동으로 인근 편의점 기준으로 지역(도시-신군구-읍면동) 정보가 채워집니다. 사진 앖는 경우 이래 지역(도시-신군구-읍면동)을 선택하여 입력하십시오">
-                                                사진으로 위치 찾기
-                                                <i class="las la-file-upload fs-2"></i>
-                                                </i>
-                                            </label>
+
                                             <button type="button" class="btn btn-primary btn-light">
                                                 저장
                                             </button>
@@ -242,209 +234,166 @@ License: For each use you must have a valid license purchased only from above li
                                     <div class="card-body form">
                                         <div class="row">
                                             <div class="col-6">
-                                                <label class="form-label a11y" for="">시 선택하기<span
-                                                        class="requird">*</span></label>
-                                                <select id="" class="form-select" aria-label="Office">
-                                                    <option>시 선택</option>
-                                                    <option value="1" selected>서울시</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                                <label class="form-label" for="">장소명</label>
+                                                <input type="text" id="" placeholder="여의도 우체국 흡연구역" name="" value=""
+                                                    autocomplete="off" class="form-control bg-transparent">
                                             </div>
                                             <div class="col-6">
-                                                <label class="form-label a11y" for="">구 선택하기<span
-                                                        class="requird">*</span></label>
-                                                <select id="" class="form-select" aria-label="Office">
-                                                    <option>구 선택</option>
-                                                    <option value="1" selected>강서구</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                                <label class="form-label" for="">개시 일자</label>
+                                                <div class="input-group" id="date01" data-td-target-input="nearest"
+                                                    data-td-target-toggle="nearest">
+                                                    <input id="date01_input" type="text" class="form-control"
+                                                        data-td-target="#date01" value="2024/11/22" />
+                                                    <span class="input-group-text" data-td-target="#date01"
+                                                        data-td-toggle="datetimepicker">
+                                                        <i class="ki-duotone ki-calendar fs-2"><span
+                                                                class="path1"></span><span class="path2"></span></i>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="row">
 
-                                            <div class="col-6">
-                                                <label class="form-label a11y" for="">동 선택하기<span
-                                                        class="requird">*</span></label>
-                                                <select id="" class="form-select" aria-label="Office">
-                                                    <option>동 선택</option>
-                                                    <option value="1" selected>서울특별시 강서구 가양1동</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-6">
-                                                <label class="form-label a11y" for="">서울특별시 강서구 가양1동</label>
-                                                <input type="text" id="" placeholder="" name="" value="서울특별시 강서구 가양1동"
-                                                    autocomplete="off" class="form-control bg-transparent">
-                                            </div>
-                                        </div>
-                                        <div class="row  ">
-                                            <div class="col-6">
-                                                <label class="form-label a11y" for="">위도</label>
-                                                <input type="text" id="" placeholder="" name="" value="37.56746"
-                                                    autocomplete="off" class="form-control bg-transparent">
-                                            </div>
-                                            <div class="col-5">
-                                                <label class="form-label a11y" for="">경도</label>
-                                                <input type="text" id="" placeholder="" name="" value="126.82587"
-                                                    autocomplete="off" class="form-control bg-transparent">
-                                            </div>
-                                            <btuoon href="#" class="btn btn-light-success col-1">
-                                                <i class="ki-duotone ki-geolocation fs-1"><span
-                                                        class="path1"></span><span class="path2"></span><span
-                                                        class="path3"></span><span class="path4"></span></i>
 
-                                            </btuoon>
-                                        </div>
                                         <div class="separator separator-dashed my-6"></div>
                                         <div class="row">
+                                            <div class="col-6 d-flex flex-column">
 
-                                            <!--begin::Radio group-->
-                                            <div class="btn-group col-6" data-kt-buttons="true"
-                                                data-kt-buttons-target="[data-kt-button]">
-                                                <!--begin::Radio-->
-                                                <label
-                                                    class="btn btn-outline btn-color-muted btn-active-light-primary active"
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="1"
-                                                        checked="checked" />
-                                                    <!--end::Input-->
-                                                    이벤트
-                                                </label>
-                                                <!--end::Radio-->
+                                                <p class="form-label" for="">개시 일자</p>
+                                                <!--begin::Radio group-->
+                                                <div class="btn-group" data-kt-buttons="true"
+                                                    data-kt-buttons-target="[data-kt-button]">
 
-                                                <!--begin::Radio-->
-                                                <label class="btn btn-outline btn-color-muted btn-active-light-primary "
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="2" />
-                                                    <!--end::Input-->
-                                                    리모트
-                                                </label>
-                                                <!--end::Radio-->
+                                                    <!--begin::Radio-->
+                                                    <label
+                                                        class="btn btn-outline btn-color-muted btn-active-light-primary active"
+                                                        data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="1"
+                                                            checked="checked" />
+                                                        <!--end::Input-->
+                                                        이벤트
+                                                    </label>
+                                                    <!--end::Radio-->
 
-                                                <!--begin::Radio-->
-                                                <label class="btn btn-outline btn-color-muted btn-active-light-primary"
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="3" />
-                                                    <!--end::Input-->
-                                                    흡연구역
-                                                </label>
-                                                <!--end::Radio-->
+                                                    <!--begin::Radio-->
+                                                    <label
+                                                        class="btn btn-outline btn-color-muted btn-active-light-primary "
+                                                        data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="2" />
+                                                        <!--end::Input-->
+                                                        리모트
+                                                    </label>
+                                                    <!--end::Radio-->
 
-                                                <!--begin::Radio-->
-                                                <label class="btn btn-outline btn-color-muted btn-active-light-primary"
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="4" />
-                                                    <!--end::Input-->
-                                                    점주재고
-                                                </label>
-                                                <!--end::Radio-->
+                                                    <!--begin::Radio-->
+                                                    <label
+                                                        class="btn btn-outline btn-color-muted btn-active-light-primary"
+                                                        data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="3" />
+                                                        <!--end::Input-->
+                                                        흡연구역
+                                                    </label>
+                                                    <!--end::Radio-->
+
+                                                </div>
+                                                <!--end::Radio group-->
                                             </div>
-                                            <!--end::Radio group-->
-                                            <!--begin::Radio group-->
-                                            <div class="btn-group col-6" data-kt-buttons="true"
-                                                data-kt-buttons-target="[data-kt-button]">
-                                                <!--begin::Radio-->
-                                                <label
-                                                    class="btn btn-outline btn-color-muted btn-active-light-primary active"
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="1"
-                                                        checked="checked" />
-                                                    <!--end::Input-->
-                                                    일반
-                                                </label>
-                                                <!--end::Radio-->
-
-                                                <!--begin::Radio-->
-                                                <label class="btn btn-outline btn-color-muted btn-active-light-primary "
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="2" />
-                                                    <!--end::Input-->
-                                                    가두리
-                                                </label>
-                                                <!--end::Radio-->
-
+                                            <div class="col-6 d-flex flex-column">
+                                                <p class="form-label" for="">프로그램</p>
+                                                <!--begin::Radio group-->
+                                                <div class="btn-group" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]">
+                                                    <!--begin::Radio-->
+                                                    <label class="btn btn-outline btn-color-muted btn-active-light-primary active" data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="1" checked="checked" />
+                                                        <!--end::Input-->
+                                                        일반
+                                                    </label>
+                                                    <!--end::Radio-->
+                                            
+                                                    <!--begin::Radio-->
+                                                    <label class="btn btn-outline btn-color-muted btn-active-light-primary " data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="2" />
+                                                        <!--end::Input-->
+                                                        가두리
+                                                    </label>
+                                                    <!--end::Radio-->
+                                            
+                                                </div>
+                                                <!--end::Radio group-->
                                             </div>
-                                            <!--end::Radio group-->
 
                                         </div>
 
                                         <div class="row">
-
-                                            <!--begin::Radio group-->
-                                            <div class="btn-group col-6" data-kt-buttons="true"
-                                                data-kt-buttons-target="[data-kt-button]">
-                                                <!--begin::Radio-->
-                                                <label
-                                                    class="btn btn-outline btn-color-muted btn-active-light-primary active"
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="1"
-                                                        checked="checked" />
-                                                    <!--end::Input-->
-                                                    진행중
-                                                </label>
-                                                <!--end::Radio-->
-
-                                                <!--begin::Radio-->
-                                                <label class="btn btn-outline btn-color-muted btn-active-light-primary "
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="2" />
-                                                    <!--end::Input-->
-                                                    후보처
-                                                </label>
-                                                <!--end::Radio-->
-
-                                                <!--begin::Radio-->
-                                                <label class="btn btn-outline btn-color-muted btn-active-light-primary"
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="3" />
-                                                    <!--end::Input-->
-                                                    비활성
-                                                </label>
-                                                <!--end::Radio-->
-
-
+                                            <div class="col-6 d-flex flex-column">
+                                        
+                                                <p class="form-label" for="">상태 구분</p>
+                                                <!--begin::Radio group-->
+                                                <div class="btn-group" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]">
+                                        
+                                                    <!--begin::Radio-->
+                                                    <label class="btn btn-outline btn-color-muted btn-active-light-primary active" data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="1" checked="checked" />
+                                                        <!--end::Input-->
+                                                        진행중
+                                                    </label>
+                                                    <!--end::Radio-->
+                                        
+                                                    <!--begin::Radio-->
+                                                    <label class="btn btn-outline btn-color-muted btn-active-light-primary " data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="2" />
+                                                        <!--end::Input-->
+                                                        후보처
+                                                    </label>
+                                                    <!--end::Radio-->
+                                        
+                                                    <!--begin::Radio-->
+                                                    <label class="btn btn-outline btn-color-muted btn-active-light-primary" data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="3" />
+                                                        <!--end::Input-->
+                                                        비활성
+                                                    </label>
+                                                    <!--end::Radio-->
+                                        
+                                                </div>
+                                                <!--end::Radio group-->
                                             </div>
-                                            <!--end::Radio group-->
-                                            <!--begin::Radio group-->
-                                            <div class="btn-group col-6" data-kt-buttons="true"
-                                                data-kt-buttons-target="[data-kt-button]">
-                                                <!--begin::Radio-->
-                                                <label
-                                                    class="btn btn-outline btn-color-muted btn-active-light-primary active"
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="1"
-                                                        checked="checked" />
-                                                    <!--end::Input-->
-                                                    실외
-                                                </label>
-                                                <!--end::Radio-->
-
-                                                <!--begin::Radio-->
-                                                <label class="btn btn-outline btn-color-muted btn-active-light-primary "
-                                                    data-kt-button="true">
-                                                    <!--begin::Input-->
-                                                    <input class="btn-check" type="radio" name="method" value="2" />
-                                                    <!--end::Input-->
-                                                    실내
-                                                </label>
-                                                <!--end::Radio-->
-
+                                            <div class="col-6 d-flex flex-column">
+                                            
+                                                <p class="form-label" for="">장소 구분</p>
+                                                <!--begin::Radio group-->
+                                                <div class="btn-group" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button]">
+                                            
+                                                    <!--begin::Radio-->
+                                                    <label class="btn btn-outline btn-color-muted btn-active-light-primary active" data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="1" checked="checked" />
+                                                        <!--end::Input-->
+                                                        실외
+                                                    </label>
+                                                    <!--end::Radio-->
+                                            
+                                                    <!--begin::Radio-->
+                                                    <label class="btn btn-outline btn-color-muted btn-active-light-primary " data-kt-button="true">
+                                                        <!--begin::Input-->
+                                                        <input class="btn-check" type="radio" name="method" value="2" />
+                                                        <!--end::Input-->
+                                                        실내
+                                                    </label>
+                                                    <!--end::Radio-->
+                                            
+                                            
+                                                </div>
+                                                <!--end::Radio group-->
                                             </div>
-                                            <!--end::Radio group-->
-
+                                        
                                         </div>
                                         <div class="separator separator-dashed my-6"></div>
                                         <div class="row">
@@ -522,8 +471,28 @@ License: For each use you must have a valid license purchased only from above li
 
 
 
-
     <!--end::Custom Javascript-->
+    <script>
+        new tempusDominus.TempusDominus(document.getElementById("date01"), {
+            localization: {
+                locale: "ko",
+                startOfTheWeek: 1,
+                format: "yyyy/MM/dd"
+            },
+            display: {
+                viewMode: "calendar",
+                components: {
+                    decades: true,
+                    year: true,
+                    month: true,
+                    date: true,
+                    hours: false,
+                    minutes: false,
+                    seconds: false
+                }
+            }
+        });
+    </script>
     <!--end::Javascript-->
 </body>
 <style>

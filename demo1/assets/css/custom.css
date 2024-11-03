@@ -716,6 +716,8 @@ table td {
 	padding: 0;
 	margin: 5px 0px;
 	list-style: none;
+	height: calc(100vh - 210px);
+	overflow-y: auto;
 }
 
 .wrap_aside_area .wrap_place_list .place_list li {
@@ -790,4 +792,5 @@ table td {
 	margin-bottom: 10px;
 }
 
-.wrap_input{}
+.wrap_input {
+}
