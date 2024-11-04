@@ -100,8 +100,8 @@ License: For each use you must have a valid license purchased only from above li
                 <div class="btn_area_link">
                   <a href="#" class="btn btn-light-info">메인</a>
                   <a href="#" class="btn btn-light-info">지도</a>
-                  <a href="#" class="btn btn-light-info">이벤트</a>
-                  <a href="#" class="btn btn-light-info">장소 등록</a>
+                  <a href="#" class="btn btn-light-info active">이벤트</a>
+                  <a href="#" class="btn btn-light-info ">신규</a>
                 </div>
                 <div class="wrap_select">
                   <select class="form-select ico_home" aria-label="Select example">
@@ -111,17 +111,20 @@ License: For each use you must have a valid license purchased only from above li
                 </div>
                 <div class="wrap_place_list">
                   <div class="control_box">
-
-                    <h3 class="tit">
-                      GSE 장소 관리
-                    </h3>
-                    <div class="btn_area">
-                      <button class="btn btn-sm px-0">
-                        <i class="ki-duotone ki-left fs-2 px-0 text-primary"></i> </a>
-                      </button>
-                      <button class="btn btn-sm  px-0 "> <i class="ki-duotone ki-right fs-2 px-0 text-primary"></i> </a>
-                      </button>
+                    <div class="row">
+              
+                      <h3 class="tit">
+                        이벤트 계획 및 실적 관리
+                      </h3>
+                      <p class="sub_tit">* 상세 조회 및 수정은 이벤트 장소명 클릭 하세요</p>
                     </div>
+                    <!-- <div class="btn_area">
+                                                  <button class="btn btn-sm px-0">
+                                                    <i class="ki-duotone ki-left fs-2 px-0 text-primary"></i> </a>
+                                                  </button>
+                                                  <button class="btn btn-sm  px-0 "> <i class="ki-duotone ki-right fs-2 px-0 text-primary"></i> </a>
+                                                  </button>
+                                                </div> -->
                   </div>
                   <ul class="place_list scroll-y ">
                     <li>
@@ -131,7 +134,7 @@ License: For each use you must have a valid license purchased only from above li
                             <strong>C/U영등포세무서</strong>
                             <span>( 101131 )</span>
                           </div>
-
+              
                         </div>
                         <div class="data">
                           <span>생성일 06.18 지점 45</span>
@@ -146,7 +149,7 @@ License: For each use you must have a valid license purchased only from above li
                             <strong>C/U영등포세무서</strong>
                             <span>( 101131 )</span>
                           </div>
-
+              
                         </div>
                         <div class="data">
                           <span>생성일 06.18 지점 45</span>
@@ -161,7 +164,7 @@ License: For each use you must have a valid license purchased only from above li
                             <strong>C/U영등포세무서</strong>
                             <span>( 101131 )</span>
                           </div>
-
+              
                         </div>
                         <div class="data">
                           <span>생성일 06.18 지점 45</span>
@@ -176,7 +179,7 @@ License: For each use you must have a valid license purchased only from above li
                             <strong>C/U영등포세무서</strong>
                             <span>( 101131 )</span>
                           </div>
-
+              
                         </div>
                         <div class="data">
                           <span>생성일 06.18 지점 45</span>
@@ -191,7 +194,7 @@ License: For each use you must have a valid license purchased only from above li
                             <strong>C/U영등포세무서</strong>
                             <span>( 101131 )</span>
                           </div>
-
+              
                         </div>
                         <div class="data">
                           <span>생성일 06.18 지점 45</span>
@@ -206,13 +209,30 @@ License: For each use you must have a valid license purchased only from above li
                             <strong>C/U영등포세무서</strong>
                             <span>( 101131 )</span>
                           </div>
-
+              
                         </div>
                         <div class="data">
                           <span>생성일 06.18 지점 45</span>
                           <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
                         </div>
                       </button>
+                    </li>
+                  </ul>
+                  <ul class="pagination">
+                    <li class="page-item first disabled m-1">
+                      <a href="#" class="page-link px-0">
+                        <i class="ki-duotone ki-double-left fs-2"><span class="path1"></span><span class="path2"></span></i>
+                      </a>
+                    </li>
+                    <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item "><a href="#" class="page-link">2</a></li>
+                    <li class="page-item "><a href="#" class="page-link">3</a></li>
+                    <li class="page-item "><a href="#" class="page-link">4</a></li>
+                    <li class="page-item "><a href="#" class="page-link">5</a></li>
+                    <li class="page-item next"><a href="#" class="page-link"><i class="next"></i></a></li>
+                    <li class="page-item next"><a href="#" class="page-link px-0">
+                        <i class="ki-duotone ki-double-right fs-2"><span class="path1"></span><span class="path2"></span></i> </a>
                     </li>
                   </ul>
                 </div>
@@ -323,10 +343,10 @@ License: For each use you must have a valid license purchased only from above li
                       </div>
                     </div>
                     <div class="separator separator-dashed my-6"></div>
-                    <div class="table-responsive  mx-3" >
+                    <div class="table-responsive  mx-3">
                       <h3>참석자 목록</h3>
-                      <table id="table_01" class="table th_fill table-rounded table-striped bordertable-row-bordered gy-5" 
-                      >
+                      <table id="table_01"
+                        class="table th_fill table-rounded table-striped bordertable-row-bordered gy-5">
                         <thead>
                           <tr class="fw-semibold fs-6 text-muted">
                             <th class="text-end">지점명</th>
@@ -465,7 +485,7 @@ License: For each use you must have a valid license purchased only from above li
         fixedColumns: {
           left: 2
         },
-        searching: false, "info": false, "lengthChange": false,  "paging": false,
+        searching: false, "info": false, "lengthChange": false, "paging": false,
       },
 
     );
