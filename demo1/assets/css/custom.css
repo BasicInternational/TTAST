@@ -4,8 +4,8 @@
 	position: absolute;
 	width: 1px;
 	height: 1px;
-	overflow: hidden;
-	top: -900px, ;
+	overflow: hidden!important;
+	top: -900px ;
 	margin: -1px;
 }
 
@@ -792,5 +792,7 @@ table td {
 	margin-bottom: 10px;
 }
 
-.wrap_input {
+.wrap_form_area .card-body.form {
+	overflow-y: auto;
+	margin-bottom: 40px;
 }
