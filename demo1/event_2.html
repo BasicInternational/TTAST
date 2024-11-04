@@ -952,6 +952,9 @@ License: For each use you must have a valid license purchased only from above li
      
       $("#table_01").DataTable(
         {
+          language: {
+            emptyTable: "등록된 참석자가 없습니다."
+          },
           pageLength: 5,
           fixedColumns: {
             left: 2
@@ -966,7 +969,9 @@ License: For each use you must have a valid license purchased only from above li
           
           $("#table_02").DataTable(
             {
-  
+  language: {
+                emptyTable: "등록된 참석자가 없습니다."
+              },
               pageLength: 5,
               fixedColumns: {
                 left: 2
