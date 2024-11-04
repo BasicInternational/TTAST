@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: KeenProduct Version: 3.0.8
+Purchase: https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="ko">
+<!--begin::Head-->
+
+<head>
+  <base href="../" />
+  <title>TTAST -Territory Target Activities System Tool</title>
+  <meta charset="utf-8" />
+  <meta name="title" content="Intuitive Edge for Effective  Market Strategy
+" />
+  <meta name="description" content="Intuitive Edge for Effective  Market Strategy
+" />
+  <meta name="keywords" content="Intuitive Edge for Effective  Market Strategy
+" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:type" content="article" />
+
+  <link rel="canonical" href="http://preview.keenthemes.comlayouts/light-sidebar.html" />
+  <link rel="shortcut icon" href="assets/media/logos/ttst_logo.png" />
+  <!--begin::Fonts(mandatory for all pages)-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+  <!--end::Fonts-->
+  <!--begin::Vendor Stylesheets(used for this page only)-->
+  <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Vendor Stylesheets-->
+  <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+  <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+  <!--end::Global Stylesheets Bundle-->
+  <script>
+    // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
+  </script>
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+
+<body id="kt_app_body" data-kt-app-layout="light-sidebar" data-kt-app-sidebar-enabled="true"
+  data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-header="true"
+  data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true"
+  class="app-default" data-kt-app-sidebar-minimize="on">
+  <!--begin::Theme mode setup on page load-->
+  <script>
+    var defaultThemeMode = "light";
+    var themeMode;
+    if (document.documentElement) {
+      if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
+        themeMode =
+          document.documentElement.getAttribute("data-bs-theme-mode");
+      } else {
+        if (localStorage.getItem("data-bs-theme") !== null) {
+          themeMode = localStorage.getItem("data-bs-theme");
+        } else {
+          themeMode = defaultThemeMode;
+        }
+      }
+      if (themeMode === "system") {
+        themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+      document.documentElement.setAttribute("data-bs-theme", themeMode);
+    }
+  </script>
+  <!--end::Theme mode setup on page load-->
+  <!--begin::App-->
+  <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+    <!--begin::Page-->
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+      <!--begin::Wrapper-->
+      <div class="app-wrapper flex-column flex-row-fluid ms-0" id="kt_app_wrapper">
+        <!--begin::Sidebar-->
+
+        <!--end::Sidebar-->
+        <!--begin::Main-->
+        <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+          <!--begin::Content wrapper-->
+          <div class="d-flex flex-column flex-column-fluid">
+            <!--begin::Toolbar-->
+
+            <!--end::Toolbar-->
+            <!--begin::Content-->
+            <div id="kt_app_content" class="app-content flex-column-fluid">
+              <!--begin::Content container-->
+              <!-- wrap_aside_area -->
+              <div class="wrap_aside_area">
+                <div class="btn_area_link">
+                  <a href="#" class="btn btn-light-info">메인</a>
+                  <a href="#" class="btn btn-light-info">지도</a>
+                  <a href="#" class="btn btn-light-info">이벤트</a>
+                  <a href="#" class="btn btn-light-info">장소 등록</a>
+                </div>
+                <div class="wrap_select">
+                  <select class="form-select ico_home" aria-label="Select example">
+                    <option>지점을 선택해 주세요</option>
+                    <option value="1" selected>전체 지점</option>
+                  </select>
+                </div>
+                <div class="wrap_place_list">
+                  <div class="control_box">
+
+                    <h3 class="tit">
+                      GSE 장소 관리
+                    </h3>
+                    <div class="btn_area">
+                      <button class="btn btn-sm px-0">
+                        <i class="ki-duotone ki-left fs-2 px-0 text-primary"></i> </a>
+                      </button>
+                      <button class="btn btn-sm  px-0 "> <i class="ki-duotone ki-right fs-2 px-0 text-primary"></i> </a>
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="place_list scroll-y ">
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--// wrap_aside_area -->
+              <div class="wrap_form_area">
+                <div class="card shadow-sm">
+                  <div class="card-header">
+                    <h3 class="card-title"><span class="text-warning me-2">[계획]</span> C/U마곡미라벨</h3>
+                    <div class="card-toolbar gap-2">
+                      <button type="button" class="btn btn-sm btn-primary btn-light">
+                        수정 하기
+                      </button>
+                      <button type="button" class="btn btn-sm btn-danger btn-light">
+                        삭제 하기
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body form">
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">이벤트 ID </label>
+                        <input type="text" id="" placeholder="" name="" value="이벤트 ID : 148295" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">장소 등록 지점</label>
+                        <input type="text" id="" placeholder="" name="" value=" 장소 등록 지점:  FS NAMBU" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">장소 ID</label>
+                        <input type="text" id="" placeholder="" name="" value=" 장소 ID : 101123" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">장소명</label>
+                        <input type="text" id="" placeholder="" name="" value="  장소명  : C/U마곡미라벨" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">진행여부</label>
+                        <input type="text" id="" placeholder="" name="" value="진행여부: 계획" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">시행일자</label>
+                        <input type="text" id="" placeholder="" name="" value="  시행일자 : 2024.11.16" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">시작 시간</label>
+                        <input type="text" id="" placeholder="" name="" value=" 시작 시간 : 07:30" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">종료 시간</label>
+                        <input type="text" id="" placeholder="" name="" value="  종료 시간 : 08:30" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">Acqusition</label>
+                        <input type="text" id="" placeholder="" name="" value="Acqusition : 0" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">COT Total</label>
+                        <input type="text" id="" placeholder="" name="" value=" COT Total : 0" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">Contact</label>
+                        <input type="text" id="" placeholder="" name="" value=" Contact : 0" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">Category Motivation</label>
+                        <input type="text" id="" placeholder="" name="" value=" Category Motivation : 0"
+                          autocomplete="off" class="form-control bg-transparent" readonly>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">Guided Trials</label>
+                        <input type="text" id="" placeholder="" name="" value=" Guided Trials : 0" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label a11y " for="">비 고</label>
+                        <input type="text" id="" placeholder="" name="" value="  비 고 : AAB" autocomplete="off"
+                          class="form-control bg-transparent" readonly>
+                      </div>
+                    </div>
+                    <div class="separator separator-dashed my-6"></div>
+                    <div class="table-responsive  mx-3" >
+                      <h3>참석자 목록</h3>
+                      <table id="table_01" class="table th_fill table-rounded table-striped bordertable-row-bordered gy-5" 
+                      >
+                        <thead>
+                          <tr class="fw-semibold fs-6 text-muted">
+                            <th class="text-end">지점명</th>
+                            <th class="text-center">참석자</th>
+                            <th class="text-end">판매기여도</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--end::Content container-->
+            </div>
+            <!--begin::Scrolltop-->
+            <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+              <i class="ki-duotone ki-arrow-up">
+                <span class="path1"></span>
+                <span class="path2"></span>
+              </i>
+            </div>
+            <!--end::Scrolltop-->
+            <!--end::Content-->
+          </div>
+          <!--end::Content wrapper-->
+        </div>
+        <!--end:::Main-->
+      </div>
+      <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
+  </div>
+  <!--end::App-->
+  <!--begin::Drawers-->
+
+  <script>
+    var hostUrl = "assets/";
+  </script>
+  <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+  <script src="assets/plugins/global/plugins.bundle.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
+  <!--end::Global Javascript Bundle-->
+  <!--begin::Vendors Javascript(used for this page only)-->
+  <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+  <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+  <!--end::Vendors Javascript-->
+  <!--begin::Custom Javascript(used for this page only)-->
+  <script src="assets/js/widgets.bundle.js"></script>
+  <script src="assets/js/custom/apps/chat/chat.js"></script>
+  <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+  <script src="assets/js/custom/utilities/modals/create-campaign.js"></script>
+  <script src="assets/js/custom/utilities/modals/users-search.js"></script>
+
+  <!-- 샘플 맵  -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <!-- Resources -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+
+
+  <!--end::Custom Javascript-->
+  <script>
+    $("#table_01").DataTable(
+      {
+        scrollY: "250px",
+        scrollX: true,
+        scrollCollapse: true,
+        fixedColumns: {
+          left: 2
+        },
+        searching: false, "info": false, "lengthChange": false,  "paging": false,
+      },
+
+    );
+  </script>
+  <!--end::Javascript-->
+</body>
+<style>
+  #kt_app_sidebar {
+    display: none;
+  }
+
+  [data-kt-app-sidebar-fixed=true] .app-wrapper {
+    margin-left: 0;
+  }
+</style>
+<!--end::Body-->
+
+</html>
