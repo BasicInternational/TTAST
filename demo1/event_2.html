@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: KeenProduct Version: 3.0.8
+Purchase: https://themes.getbootstrap.com/product/keen-the-ultimate-bootstrap-admin-theme/
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="ko">
+<!--begin::Head-->
+
+<head>
+  <base href="../" />
+  <title>TTAST -Territory Target Activities System Tool</title>
+  <meta charset="utf-8" />
+  <meta name="title" content="Intuitive Edge for Effective  Market Strategy
+" />
+  <meta name="description" content="Intuitive Edge for Effective  Market Strategy
+" />
+  <meta name="keywords" content="Intuitive Edge for Effective  Market Strategy
+" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:type" content="article" />
+
+  <link rel="canonical" href="http://preview.keenthemes.comlayouts/light-sidebar.html" />
+  <link rel="shortcut icon" href="assets/media/logos/ttst_logo.png" />
+  <!--begin::Fonts(mandatory for all pages)-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+  <!--end::Fonts-->
+  <!--begin::Vendor Stylesheets(used for this page only)-->
+  <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+  <!--end::Vendor Stylesheets-->
+  <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+  <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+  <!--end::Global Stylesheets Bundle-->
+  <script>
+    // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
+  </script>
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+
+<body id="kt_app_body" data-kt-app-layout="light-sidebar" data-kt-app-sidebar-enabled="true"
+  data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true" data-kt-app-sidebar-push-header="true"
+  data-kt-app-sidebar-push-toolbar="true" data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true"
+  class="app-default" data-kt-app-sidebar-minimize="on">
+  <!--begin::Theme mode setup on page load-->
+  <script>
+    var defaultThemeMode = "light";
+    var themeMode;
+    if (document.documentElement) {
+      if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
+        themeMode =
+          document.documentElement.getAttribute("data-bs-theme-mode");
+      } else {
+        if (localStorage.getItem("data-bs-theme") !== null) {
+          themeMode = localStorage.getItem("data-bs-theme");
+        } else {
+          themeMode = defaultThemeMode;
+        }
+      }
+      if (themeMode === "system") {
+        themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+      document.documentElement.setAttribute("data-bs-theme", themeMode);
+    }
+  </script>
+  <!--end::Theme mode setup on page load-->
+  <!--begin::App-->
+  <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+    <!--begin::Page-->
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+      <!--begin::Wrapper-->
+      <div class="app-wrapper flex-column flex-row-fluid ms-0" id="kt_app_wrapper">
+        <!--begin::Sidebar-->
+
+        <!--end::Sidebar-->
+        <!--begin::Main-->
+        <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+          <!--begin::Content wrapper-->
+          <div class="d-flex flex-column flex-column-fluid">
+            <!--begin::Toolbar-->
+
+            <!--end::Toolbar-->
+            <!--begin::Content-->
+            <div id="kt_app_content" class="app-content flex-column-fluid">
+              <!--begin::Content container-->
+              <!-- wrap_aside_area -->
+              <div class="wrap_aside_area">
+                <div class="btn_area_link">
+                  <a href="#" class="btn btn-light-info">메인</a>
+                  <a href="#" class="btn btn-light-info">지도</a>
+                  <a href="#" class="btn btn-light-info">이벤트</a>
+                  <a href="#" class="btn btn-light-info">장소 등록</a>
+                </div>
+                <div class="wrap_select">
+                  <select class="form-select ico_home" aria-label="Select example">
+                    <option>지점을 선택해 주세요</option>
+                    <option value="1" selected>전체 지점</option>
+                  </select>
+                </div>
+                <div class="wrap_place_list">
+                  <div class="control_box">
+
+                    <h3 class="tit">
+                      GSE 장소 관리
+                    </h3>
+                    <div class="btn_area">
+                      <button class="btn btn-sm px-0">
+                        <i class="ki-duotone ki-left fs-2 px-0 text-primary"></i> </a>
+                      </button>
+                      <button class="btn btn-sm  px-0 "> <i class="ki-duotone ki-right fs-2 px-0 text-primary"></i> </a>
+                      </button>
+                    </div>
+                  </div>
+                  <ul class="place_list scroll-y ">
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                    <li>
+                      <button>
+                        <div class="tit">
+                          <div>
+                            <strong>C/U영등포세무서</strong>
+                            <span>( 101131 )</span>
+                          </div>
+
+                        </div>
+                        <div class="data">
+                          <span>생성일 06.18 지점 45</span>
+                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                        </div>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--// wrap_aside_area -->
+              <div class="wrap_form_area">
+                <div class="card shadow-sm">
+                  <div class="card-header">
+                    <h3 class="card-title"><span class="text-warning me-2">이벤트 계획</span> 수정 <span
+                        class="text-gray-600 ms-2">event id ( 148295 )</span></h3>
+                    <div class="card-toolbar gap-2">
+                      <button type="button" class="btn btn-sm btn-primary btn-light">
+                        등록 하기
+                      </button>
+
+                    </div>
+                  </div>
+                  <div class="card-body form">
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label " for="">장소 ( 등록 지점 : 45 )</label>
+                        <select name="place_id" id="inputVenue" class="form-select">
+                          <option value="" selected="selected">선택</option>
+                          <option value="118311">
+                          </option>
+                          <option value="101120">
+                            C/UNH서울타워 </option>
+                          <option value="101121">
+                            C/U구로정우 </option>
+                          <option value="101122">
+                            C/U동양미래대학교 </option>
+                          <option value="101123" selected="selected">
+                            C/U마곡미라벨 </option>
+                          <option value="101124">
+                            C/U마곡월튼 </option>
+                          <option value="101125">
+                            C/U마곡웰튼 </option>
+                          <option value="101126">
+                            C/U마곡필굿점 </option>
+                          <option value="101127">
+                            C/U목동41타워 </option>
+                          <option value="101128">
+                            C/U목동드림타워 </option>
+                          <option value="101129">
+                            C/U부천오정산업단지 </option>
+                          <option value="101130">
+                            C/U양평이레빌딩 </option>
+                          <option value="101131">
+                            C/U영등포세무서 </option>
+                          <option value="101132">
+                            CU마곡미라벨 </option>
+                          <option value="101133">
+                            CU정우 </option>
+                          <option value="101134">
+                            E/M가산디지털역앞흡연부스 </option>
+                          <option value="101135">
+                            G/S가산에이스 </option>
+                          <option value="101136">
+                            G/S가양더리브 </option>
+                          <option value="101139">
+                            G/S가양테크노 </option>
+                          <option value="101140">
+                            G/S마곡에이스 </option>
+                          <option value="101137">
+                            G/S서운단지점 </option>
+                          <option value="101142">
+                            G/S여의성우 </option>
+                          <option value="101143">
+                            G/S트윈타워 </option>
+                          <option value="101144">
+                            KBS본관 </option>
+                          <option value="101145">
+                            KBS본관앞 </option>
+                          <option value="101146">
+                            LG가산디지털센터 </option>
+                          <option value="101147">
+                            LG사이언스파크 </option>
+                          <option value="101149">
+                            MICROTEC </option>
+                          <option value="101150">
+                            MS구로이엔씨 </option>
+                          <option value="101151">
+                            가산메트로지식산업센터 </option>
+                          <option value="101152">
+                            가양테크노 </option>
+                          <option value="101153">
+                            갑을그레이트밸리 </option>
+                          <option value="101154">
+                            강서IT밸리 </option>
+                          <option value="101155">
+                            경동나비앤 </option>
+                          <option value="101156">
+                            경동보일러 </option>
+                          <option value="101157">
+                            교원공제회관 </option>
+                          <option value="101159">
+                            교직원공제외 </option>
+                          <option value="101158">
+                            교직원공제회 </option>
+                          <option value="101161">
+                            구로이앤씨 </option>
+                          <option value="101163">
+                            구로이엔씨 </option>
+                          <option value="101164">
+                            구로정우 </option>
+                          <option value="101165">
+                            국민은행서여의도지점 </option>
+                          <option value="101166">
+                            국민일보가판 </option>
+                          <option value="101168">
+                            김포공항국내선 </option>
+                          <option value="101169">
+                            넥센 </option>
+                          <option value="101170">
+                            넥센유니버시티 </option>
+                          <option value="101171">
+                            대륭포스트17차 </option>
+                          <option value="101172">
+                            대성디폴리스럭키럭키 </option>
+                          <option value="101173">
+                            더카페&amp;마트 </option>
+                          <option value="101174">
+                            로뎀타워 </option>
+                          <option value="101178">
+                            롯데R&amp;D센터흡연구역 </option>
+                          <option value="101175">
+                            롯데영우김포공항 </option>
+                          <option value="101176">
+                            롯데영우부천 </option>
+                          <option value="101177">
+                            롯데영우영등포 </option>
+                          <option value="101179">
+                            롯데중동점 </option>
+                          <option value="101180">
+                            마곡파인스퀘어3차 </option>
+                          <option value="101181">
+                            마곡홈앤쇼핑 </option>
+                          <option value="101182">
+                            명동칼국수앞흡연구역 </option>
+                          <option value="101183">
+                            바바리안모터스 </option>
+                          <option value="101185">
+                            보타닉푸르지오시티 </option>
+                          <option value="101186">
+                            삼희익스콘벤처타워 </option>
+                          <option value="101187">
+                            삼희익스콘벤처타워흡연부스 </option>
+                          <option value="101188">
+                            상동홈플러스 </option>
+                          <option value="101190">
+                            스포츠조선 </option>
+                          <option value="101191">
+                            시흥유통상가 </option>
+                          <option value="101192">
+                            시흥유통진흥회 </option>
+                          <option value="101193">
+                            신도림역2번출구 </option>
+                          <option value="101194">
+                            신세기상사 </option>
+                          <option value="101195">
+                            아이에스biz타워 </option>
+                          <option value="101196">
+                            아이에스BIZ타워1차 </option>
+                          <option value="101197">
+                            양평동이레빌딩흡연구역 </option>
+                          <option value="101198">
+                            에이스하이엔드타워2 </option>
+                          <option value="101199">
+                            엘마트 </option>
+                          <option value="101201">
+                            여의도역3번출구흡연실 </option>
+                          <option value="101203">
+                            여의도포스트타워 </option>
+                          <option value="101200">
+                            여의도하나증권 </option>
+                          <option value="101205">
+                            여의도하나증권앞 </option>
+                          <option value="101206">
+                            우림라이온스밸리 </option>
+                          <option value="101207">
+                            우림라이온스밸리A </option>
+                          <option value="101208">
+                            우림블루라인 </option>
+                          <option value="101209">
+                            이지스자산운영 </option>
+                          <option value="101210">
+                            이지스타워앞 </option>
+                          <option value="101211">
+                            익스콘벤처타워흡연부스 </option>
+                          <option value="101212">
+                            전경련회관 </option>
+                          <option value="101213">
+                            켄달스퀘어물류센터 </option>
+                          <option value="101214">
+                            투나백화점 </option>
+                          <option value="101215">
+                            튜나쇼핑몰인근 </option>
+                          <option value="101216">
+                            하나증권앞흡연부스 </option>
+                          <option value="101217">
+                            한끼식당 </option>
+                          <option value="101218">
+                            현대지식산업센터 </option>
+                          <option value="101219">
+                            호서전문학교 </option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label" for="">일자</label>
+                        <div class="input-group input-group-sm" id="date01" data-td-target-input="nearest"
+                          data-td-target-toggle="nearest">
+                          <input id="date01_input" type="text" class="form-control" data-td-target="#date01"
+                            value="2024/11/22" />
+                          <span class="input-group-text" data-td-target="#date01" data-td-toggle="datetimepicker">
+                            <i class="ki-duotone ki-calendar fs-2"><span class="path1"></span><span
+                                class="path2"></span></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label " for="startTime">시작 시간</label>
+                        <select name="start_time" id="startTime" class="form-select">
+                          <option value="">선택</option>
+                          <option value="00:00">00:00</option>
+                          <option value="00:30">00:30</option>
+                          <option value="01:00">01:00</option>
+                          <option value="01:30">01:30</option>
+                          <option value="02:00">02:00</option>
+                          <option value="02:30">02:30</option>
+                          <option value="03:00">03:00</option>
+                          <option value="03:30">03:30</option>
+                          <option value="04:00">04:00</option>
+                          <option value="04:30">04:30</option>
+                          <option value="05:00">05:00</option>
+                          <option value="05:30">05:30</option>
+                          <option value="06:00">06:00</option>
+                          <option value="06:30">06:30</option>
+                          <option value="07:00">07:00</option>
+                          <option value="07:30" selected="selected">07:30</option>
+                          <option value="08:00">08:00</option>
+                          <option value="08:30">08:30</option>
+                          <option value="09:00">09:00</option>
+                          <option value="09:30">09:30</option>
+                          <option value="10:00">10:00</option>
+                          <option value="10:30">10:30</option>
+                          <option value="11:00">11:00</option>
+                          <option value="11:30">11:30</option>
+                          <option value="12:00">12:00</option>
+                          <option value="12:30">12:30</option>
+                          <option value="13:00">13:00</option>
+                          <option value="13:30">13:30</option>
+                          <option value="14:00">14:00</option>
+                          <option value="14:30">14:30</option>
+                          <option value="15:00">15:00</option>
+                          <option value="15:30">15:30</option>
+                          <option value="16:00">16:00</option>
+                          <option value="16:30">16:30</option>
+                          <option value="17:00">17:00</option>
+                          <option value="17:30">17:30</option>
+                          <option value="18:00">18:00</option>
+                          <option value="18:30">18:30</option>
+                          <option value="19:00">19:00</option>
+                          <option value="19:30">19:30</option>
+                          <option value="20:00">20:00</option>
+                          <option value="20:30">20:30</option>
+                          <option value="21:00">21:00</option>
+                          <option value="21:30">21:30</option>
+                          <option value="22:00">22:00</option>
+                          <option value="22:30">22:30</option>
+                          <option value="23:00">23:00</option>
+                          <option value="23:30">23:30</option>
+                        </select>
+                      </div>
+                      <div class="col-6 input-group-sm">
+                        <label class="form-label " for="endTime">종료 시간</label>
+                        <select name="end_time" id="endTime" class="form-select">
+                          <option value="">선택</option>
+                          <option value="08:00">08:00</option>
+                          <option value="08:30" selected="selected">08:30</option>
+                          <option value="09:00">09:00</option>
+                          <option value="09:30">09:30</option>
+                          <option value="10:00">10:00</option>
+                          <option value="10:30">10:30</option>
+                          <option value="11:00">11:00</option>
+                          <option value="11:30">11:30</option>
+                          <option value="12:00">12:00</option>
+                          <option value="12:30">12:30</option>
+                          <option value="13:00">13:00</option>
+                          <option value="13:30">13:30</option>
+                          <option value="14:00">14:00</option>
+                          <option value="14:30">14:30</option>
+                          <option value="15:00">15:00</option>
+                          <option value="15:30">15:30</option>
+                          <option value="16:00">16:00</option>
+                          <option value="16:30">16:30</option>
+                          <option value="17:00">17:00</option>
+                          <option value="17:30">17:30</option>
+                          <option value="18:00">18:00</option>
+                          <option value="18:30">18:30</option>
+                          <option value="19:00">19:00</option>
+                          <option value="19:30">19:30</option>
+                          <option value="20:00">20:00</option>
+                          <option value="20:30">20:30</option>
+                          <option value="21:00">21:00</option>
+                          <option value="21:30">21:30</option>
+                          <option value="22:00">22:00</option>
+                          <option value="22:30">22:30</option>
+                          <option value="23:00">23:00</option>
+                          <option value="23:30">23:30</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="separator separator-dashed my-6"></div>
+                    <div class="row">
+                      <div class="col-6 input-group-sm d-flex align-items-end gap-4">
+                        <label class="form-label w-120px" for="">Acquisition</label>
+                        <input type="text" id="" placeholder="" name="" value=" 0" autocomplete="off"
+                          class="form-control text-end bg-transparent">
+                      </div>
+                      <div class="col-6 input-group-sm d-flex align-items-end gap-4">
+                        <label class="form-label  w-120px" for="">COT Total</label>
+                        <input type="text" id="" placeholder="" name="" value=" 0" autocomplete="off"
+                          class="form-control text-end bg-transparent">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4 input-group-sm d-flex align-items-end gap-4">
+                        <label class="form-label text-end  w-80px" for="">Contact</label>
+                        <input type="text" id="" placeholder="" name="" value=" 0" autocomplete="off"
+                          class="form-control text-end bg-transparent">
+                      </div>
+                      <div class="col-4 input-group-sm d-flex align-items-end gap-4">
+                        <label class="form-label  text-end  w-80px" for="">CM</label>
+                        <input type="text" id="" placeholder="" name="" value=" 0" autocomplete="off"
+                          class="form-control text-end bg-transparent">
+                      </div>
+                      <div class="col-4 input-group-sm d-flex align-items-end gap-4">
+                        <label class="form-label  text-end  w-80px" for="">GT</label>
+                        <input type="text" id="" placeholder="" name="" value=" 0" autocomplete="off"
+                          class="form-control text-end bg-transparent">
+                      </div>
+                    </div>
+                    <div class="row mt-8">
+                      <div class="d-flex gap-4">
+                        <div class="w-200px">
+                          <input class="a11y" id="uplaodFile" type="file" accept=".png, .jpg, .jpeg" />
+                          <label for="uplaodFile" type="button" class="btn btn-sm btn-success" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="tooltip-inverse"
+                            title="* 사진을 업로드하면 자동으로 인근 편의점 기준으로 지역(도시-신군구-읍면동) 정보가 채워집니다. 사진 앖는 경우 이래 지역(도시-신군구-읍면동)을 선택하여 입력하십시오">
+                            사진으로 위치 찾기
+                            <i class="las la-file-upload fs-2"></i>
+                            </i>
+                          </label>
+                        </div>
+                        <div class="w-100 input-group-sm ">
+                          <label class="form-label  text-end a11y" for=""></label>
+                          <input type="text" id="" placeholder="" name="" value=" 0" autocomplete="off"
+                            class="form-control text-end bg-transparent">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="separator separator-dashed my-6"></div>
+                    <div class="table-responsive  mx-3">
+                      <div class="d-flex justify-content-between align-items-end">
+
+                        <h3>참석자 목록</h3>
+                        <button type="button" class="btn btn-light-info btn-sm" data-bs-toggle="modal"
+                          data-bs-target="#addModal">
+
+                          <i class="ki-duotone ki-user-edit">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                            <span class="path3"></span>
+                          </i>참석자 추가
+                        </button>
+
+                        <div class="modal fade" tabindex="-1" id="addModal">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h3 class="modal-title">참석자 등록</h3>
+
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                                  aria-label="Close">
+                                  <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span
+                                      class="path2"></span></i>
+                                </div>
+                                <!--end::Close-->
+                              </div>
+
+                              <div class="modal-body">
+                                <div class="row ">
+                                  <div class="col-6 input-group-sm">
+                                    <label class="form-label a11y " for="frm_select_region">지점선택 </label>
+                                    <select class="form-select" id="frm_select_region">
+                                      <option selected="selected" value="">지점 선택</option>
+                                      <option value="63">63:FC ANYANG</option>
+                                      <option value="32">32:FC BUKBU</option>
+                                      <option value="67">67:FC CHEONAN</option>
+                                      <option value="57">57:FC CHEONGJU</option>
+                                      <option value="37">37:FC DAEJEON</option>
+                                      <option value="68">68:FC DONGBU</option>
+                                      <option value="59">59:FC DONGDAEGU</option>
+                                      <option value="61">61:FC DONGPUSAN</option>
+                                      <option value="36">36:FC DONGSUWON</option>
+                                      <option value="38">38:FC GWANGJU</option>
+                                      <option value="51">51:FC GYEONGNAM</option>
+                                      <option value="55">55:FC INCHEON</option>
+                                      <option value="65">65:FC JEONJU</option>
+                                      <option value="31">31:FC KANGNAM</option>
+                                      <option value="64">64:FC KANGSEO</option>
+                                      <option value="66">66:FC KANGWON</option>
+                                      <option value="35">35:FC NAMBU</option>
+                                      <option value="62">62:FC PUSAN</option>
+                                      <option value="33">33:FC SEOBU</option>
+                                      <option value="56">56:FC SEOSUWON</option>
+                                      <option value="34">34:FC SUNGNAM</option>
+                                      <option value="39">39:FC TAEGU</option>
+                                      <option value="20">20:FS AHNYANG</option>
+                                      <option value="44">44:FS BUKBU</option>
+                                      <option value="47">47:FS CHEJU</option>
+                                      <option value="18">18:FS CHEONGJU</option>
+                                      <option value="23">23:FS CHUNAN</option>
+                                      <option value="17">17:FS DAEGU</option>
+                                      <option value="14">14:FS DAEJEON</option>
+                                      <option value="41">41:FS DONGBU</option>
+                                      <option value="21">21:FS DONGDAEGU</option>
+                                      <option value="11">11:FS GANGNAM</option>
+                                      <option value="48">48:FS GANGSEO</option>
+                                      <option value="50">50:FS GANGWON</option>
+                                      <option value="16">16:FS GWANGJU</option>
+                                      <option value="46">46:FS INCHON</option>
+                                      <option value="15">15:FS JEONJU</option>
+                                      <option value="74">74:FS JINJU</option>
+                                      <option value="73">73:FS MASAN</option>
+                                      <option value="45">45:FS NAMBU</option>
+                                      <option value="19">19:FS POHANG</option>
+                                      <option value="76">76:FS PUSAN1-DONGBU</option>
+                                      <option value="71">71:FS PUSAN1-JUNGBU</option>
+                                      <option value="77">77:FS PUSAN2-SEOBU</option>
+                                      <option value="43">43:FS SEOBU</option>
+                                      <option value="22">22:FS SOONCHEON</option>
+                                      <option value="24">24:FS SUNGNAM</option>
+                                      <option value="13">13:FS SUWON</option>
+                                      <option value="78">78:FS TONGYEONG</option>
+                                      <option value="75">75:FS ULSAN</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-6 input-group-sm">
+                                    <label class="form-label a11y " for="">참석자 선택</label>
+                                    <select id="" class="form-select" aria-label="Office">
+                                      <option selected="selected">참석자 선택</option>
+                                      <option value="1">참석자</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+
+                                </div>
+                                <table id="table_02"
+                                  class="table th_fill table-rounded table-striped bordertable-row-bordered gy-5">
+
+                                  <thead>
+                                    <tr class="fw-semibold fs-6 text-muted">
+                                      <th class="text-end">지점명</th>
+                                      <th class="text-center">참석자</th>
+                                      <th class="text-end">판매기여도</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-end">35</td>
+                                      <td class="text-center">신용태</td>
+                                      <td class="text-end">0.5</td>
+                                    </tr>
+                                  </tbody>
+
+                                </table>
+                                
+                              </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">닫기</button>
+                                <button type="button" class="btn btn-primary">등록</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <table id="table_01"
+                        class="table th_fill table-rounded table-striped bordertable-row-bordered gy-5">
+                        <thead>
+                          <tr class="fw-semibold fs-6 text-muted">
+                            <th class="text-end">지점명</th>
+                            <th class="text-center">참석자</th>
+                            <th class="text-end">판매기여도</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                          <tr>
+                            <td class="text-end">35</td>
+                            <td class="text-center">신용태</td>
+                            <td class="text-end">0.5</td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--end::Content container-->
+            </div>
+            <!--begin::Scrolltop-->
+            <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+              <i class="ki-duotone ki-arrow-up">
+                <span class="path1"></span>
+                <span class="path2"></span>
+              </i>
+            </div>
+            <!--end::Scrolltop-->
+            <!--end::Content-->
+          </div>
+          <!--end::Content wrapper-->
+        </div>
+        <!--end:::Main-->
+      </div>
+      <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
+  </div>
+  <!--end::App-->
+  <!--begin::Drawers-->
+
+  <script>
+    var hostUrl = "assets/";
+  </script>
+  <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+  <script src="assets/plugins/global/plugins.bundle.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
+  <!--end::Global Javascript Bundle-->
+  <!--begin::Vendors Javascript(used for this page only)-->
+  <script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+  <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+  <!--end::Vendors Javascript-->
+  <!--begin::Custom Javascript(used for this page only)-->
+  <script src="assets/js/widgets.bundle.js"></script>
+  <script src="assets/js/custom/apps/chat/chat.js"></script>
+  <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+  <script src="assets/js/custom/utilities/modals/create-campaign.js"></script>
+  <script src="assets/js/custom/utilities/modals/users-search.js"></script>
+
+  <!-- 샘플 맵  -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <!-- Resources -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+
+
+  <!--end::Custom Javascript-->
+  <script>
+    $(document).ready(function () {
+     
+      $("#table_01").DataTable(
+        {
+          
+          fixedColumns: {
+            left: 2
+          },
+          searching: false, "info": false, "lengthChange": false, "paging": false,
+        },
+
+      );
+
+    });
+
+    new tempusDominus.TempusDominus(document.getElementById("date01"), {
+      localization: {
+        locale: "ko",
+        startOfTheWeek: 1,
+        format: "yyyy/MM/dd"
+      },
+      display: {
+        viewMode: "calendar",
+        components: {
+          decades: true,
+          year: true,
+          month: true,
+          date: true,
+          hours: false,
+          minutes: false,
+          seconds: false
+        }
+      }
+    });
+  </script>
+  <!--end::Javascript-->
+</body>
+<style>
+  #kt_app_sidebar {
+    display: none;
+  }
+
+  [data-kt-app-sidebar-fixed=true] .app-wrapper {
+    margin-left: 0;
+  }
+  .dt-scroll-headInner {
+    width: 100%!important;
+    
+}
+</style>
+<!--end::Body-->
+
+</html>
