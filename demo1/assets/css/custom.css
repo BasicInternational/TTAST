@@ -696,6 +696,7 @@ table.th_fill th {
 .wrap_aside_area .btn_area_link .btn {
 	min-width: 70px;
 	width: 100%;
+	white-space: nowrap;
 }
 
 .wrap_aside_area .wrap_place_list {
