@@ -107,7 +107,16 @@ License: For each use you must have a valid license purchased only from above li
                     <div class="d-flex align-items-stretch justify-content-end flex-lg-grow-1"
                         id="kt_app_header_wrapper">
                         <!--begin::Menu wrapper-->
+                        <div class="menu_select input-group-sm">
 
+                            <select name="office_id" id="office_id" class="form-control" style="font-size:11px;"
+                                onchange="changeOffice(this.value)">
+
+                                <option value=" 45" selected="">
+                                    45 :
+                                    FS NAMBU </option>
+                            </select>
+                        </div>
                         <!--end::Menu wrapper-->
                         <!--begin::Navbar-->
                         <div class="app-navbar flex-shrink-0">
@@ -347,7 +356,7 @@ License: For each use you must have a valid license purchased only from above li
                     </div>
                     <!--end::sidebar menu-->
                     <!--begin::Footer-->
-                    <div class="app-sidebar-footer flex-column-auto pt-2 pb-6 px-6" id="kt_app_sidebar_footer">
+                    <!-- <div class="app-sidebar-footer flex-column-auto pt-2 pb-6 px-6" id="kt_app_sidebar_footer">
                         <a href="https://preview.keenthemes.com/html/keen/docs"
                             class="btn btn-flex flex-center btn-custom btn-primary overflow-hidden text-nowrap px-0 h-40px w-100"
                             data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss-="click"
@@ -358,7 +367,7 @@ License: For each use you must have a valid license purchased only from above li
                                 <span class="path2"></span>
                             </i>
                         </a>
-                    </div>
+                    </div> -->
                     <!--end::Footer-->
                 </div>
                 <!--end::Sidebar-->
@@ -1099,7 +1108,8 @@ License: For each use you must have a valid license purchased only from above li
                                                             <td class="text-end">01</td>
                                                             <td class="text-end">01</td>
                                                             <td class="text-end">01</td>
-                                                        </tr><tr>
+                                                        </tr>
+                                                        <tr>
                                                             <td> FC DONGBU</td>
                                                             <td class="text-center">FCE</td>
                                                             <td class="text-end">6806</td>
