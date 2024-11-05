@@ -284,7 +284,13 @@ table.th_fill th { background: var(--bs-primary-light) !important; }
 @media (max-width:768px){
  .wrap_report .chart_section { flex-direction: column; } .wrap_report .chart_section > .card { width: 100%; } 
  }
-.wrap_sale_section .timeline-label { font-size: .8rem; } 
+.wrap_sale_section .timeline-label {font-size: 1rem;} 
+.wrap_sale_section .timeline-label:before{
+    bottom: 30px;
+}
+.wrap_sale_section  .timeline-label .timeline-badge {
+    margin-right: 10px;
+}
 @media (max-width:768px) {
 .wrap_report .wrap_sale_section > .card.chart {width: 100%; } 
  } 
