@@ -1,7 +1,9 @@
 @import "font.css"; .w-120px { width: 120px !important; } 
 
 .a11y { position: absolute; width: 1px; height: 1px; overflow: hidden !important; top: -900px; margin: -1px; } 
-
+[data-kt-app-layout=dark-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-title {
+    color: #9f9f9f;
+}
 #kt_app_header_wrapper .user_img i { font-size: 36px; } 
 #kt_app_header_wrapper .menu_select {
     display: flex;
@@ -13,7 +15,7 @@ div#kt_app_header { background: #fff; box-shadow: var(--bs-code-shadow); }
 
 .logo_area { display: flex; align-items: center; } 
 
-.logo_area .tit { margin-bottom: 0; margin-left: 1rem; font-family: 'iqos'; } 
+.logo_area .tit {margin-bottom: 0;margin-left: 1rem;font-family: 'iqos';color: #fff;} 
 
 @media (min-width:992px) { [data-kt-app-sidebar-minimize=on][data-kt-app-sidebar-hoverable=true] .app-sidebar:not(:hover) .app-sidebar-logo .app-sidebar-logo-default { display: flex; } 
  }
