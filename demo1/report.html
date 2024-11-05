@@ -104,88 +104,95 @@ License: For each use you must have a valid license purchased only from above li
                     </div>
                     <!--end::Mobile logo-->
                     <!--begin::Header wrapper-->
-                    <div class="d-flex align-items-stretch justify-content-end flex-lg-grow-1"
+                    <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1 align-items-center gap-2"
                         id="kt_app_header_wrapper">
-                        <!--begin::Menu wrapper-->
-                        <div class="menu_select input-group-sm">
+                        <div class="quick_menu d-flex align-items-center">
 
-                            <select name="office_id" id="office_id" class="form-control" style="font-size:11px;"
-                                onchange="changeOffice(this.value)">
-
-                                <option value=" 45" selected="">
-                                    45 :
-                                    FS NAMBU </option>
-                            </select>
+                            <a href="#" class="btn btn-light-primary btn-sm">메인 지도화면</a>
                         </div>
-                        <!--end::Menu wrapper-->
-                        <!--begin::Navbar-->
-                        <div class="app-navbar flex-shrink-0">
-                            <!--begin::User menu-->
-                            <div class="app-navbar-item ms-2 ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
-                                <!--begin::Menu wrapper-->
-                                <div class="cursor-pointer symbol symbol-35px symbol-md-40px"
-                                    data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
-                                    data-kt-menu-placement="bottom-end">
-                                    <div class="user_img">
-                                        <i class="ki-duotone ki-user-square">
-                                            <span class="path1"></span>
-                                            <span class="path2"></span>
-                                            <span class="path3"></span>
-                                        </i>
-                                    </div>
-                                </div>
-                                <!--begin::User account menu-->
-                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px"
-                                    data-kt-menu="true">
-                                    <!--begin::Menu item-->
-                                    <div class="menu-item px-3">
-                                        <div class="menu-content d-flex align-items-center gap-2 px-3">
-                                            <!--begin::Avatar-->
-                                            <div class="user_img">
-                                                <i class="ki-duotone ki-user-square">
-                                                    <span class="path1"></span>
-                                                    <span class="path2"></span>
-                                                    <span class="path3"></span>
-                                                </i>
-                                            </div>
-                                            <!--end::Avatar-->
-                                            <!--begin::Username-->
-                                            <div class="d-flex flex-column">
-                                                <div class="fw-bold d-flex align-items-center fs-5">
-                                                    테스트 FS남부
-                                                </div>
-                                                <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">(45 /
-                                                    FS NAMBU)</a>
-                                            </div>
-                                            <!--end::Username-->
+                        <div class="d-flex">
+
+                            <div class="menu_select input-group-sm ">
+
+                                <select name="office_id" id="office_id" class="form-control" style="font-size:11px;"
+                                    onchange="changeOffice(this.value)">
+
+                                    <option value=" 45" selected="">
+                                        45 :
+                                        FS NAMBU </option>
+                                </select>
+                            </div>
+                            <!--end::Menu wrapper-->
+                            <!--begin::Navbar-->
+                            <div class="app-navbar flex-shrink-0">
+                                <!--begin::User menu-->
+                                <div class="app-navbar-item ms-2 ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
+                                    <!--begin::Menu wrapper-->
+                                    <div class="cursor-pointer symbol symbol-35px symbol-md-40px"
+                                        data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+                                        data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                                        <div class="user_img">
+                                            <i class="ki-duotone ki-user-square">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                                <span class="path3"></span>
+                                            </i>
                                         </div>
                                     </div>
-                                    <!--end::Menu item-->
-                                    <!--begin::Menu separator-->
-                                    <div class="separator my-2"></div>
-                                    <!--end::Menu separator-->
-                                    <!--begin::Menu item-->
-                                    <div class="menu-item px-5">
-                                        <a href="#index.php" class="menu-link px-5">main page(map)</a>
-                                    </div>
-                                    <!--end::Menu item-->
+                                    <!--begin::User account menu-->
+                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px"
+                                        data-kt-menu="true">
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item px-3">
+                                            <div class="menu-content d-flex align-items-center gap-2 px-3">
+                                                <!--begin::Avatar-->
+                                                <div class="user_img">
+                                                    <i class="ki-duotone ki-user-square">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                        <span class="path3"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Avatar-->
+                                                <!--begin::Username-->
+                                                <div class="d-flex flex-column">
+                                                    <div class="fw-bold d-flex align-items-center fs-5">
+                                                        테스트 FS남부
+                                                    </div>
+                                                    <a href="#"
+                                                        class="fw-semibold text-muted text-hover-primary fs-7">(45 /
+                                                        FS NAMBU)</a>
+                                                </div>
+                                                <!--end::Username-->
+                                            </div>
+                                        </div>
+                                        <!--end::Menu item-->
+                                        <!--begin::Menu separator-->
+                                        <div class="separator my-2"></div>
+                                        <!--end::Menu separator-->
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item px-5">
+                                            <a href="#index.php" class="menu-link px-5">main page(map)</a>
+                                        </div>
+                                        <!--end::Menu item-->
 
-                                    <!--begin::Menu separator-->
-                                    <div class="separator my-2"></div>
-                                    <!--end::Menu separator-->
-                                    <!--begin::Menu item-->
-                                    <div class="menu-item px-5">
-                                        <a href="authentication/layouts/corporate/sign-in.html"
-                                            class="menu-link px-5">Sign Out</a>
+                                        <!--begin::Menu separator-->
+                                        <div class="separator my-2"></div>
+                                        <!--end::Menu separator-->
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item px-5">
+                                            <a href="authentication/layouts/corporate/sign-in.html"
+                                                class="menu-link px-5">Sign Out</a>
+                                        </div>
+                                        <!--end::Menu item-->
                                     </div>
-                                    <!--end::Menu item-->
+                                    <!--end::User account menu-->
+                                    <!--end::Menu wrapper-->
                                 </div>
-                                <!--end::User account menu-->
-                                <!--end::Menu wrapper-->
+                                <!--end::User menu-->
                             </div>
-                            <!--end::User menu-->
+                            <!--end::Navbar-->
                         </div>
-                        <!--end::Navbar-->
                     </div>
                     <!--end::Header wrapper-->
                 </div>
