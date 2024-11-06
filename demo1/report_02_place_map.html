@@ -386,374 +386,379 @@ License: For each use you must have a valid license purchased only from above li
                         <div id="kt_app_content" class="app-content flex-column-fluid">
                             <!--begin::Content container-->
                             <div id="kt_app_content_container" class="app-container container-fluid wrap_report">
-                                <div class="wrap_calendar_section ">
+                                <div class="wrap_upload_section">
 
                                     <div class="card shadow-sm ">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Calendar</h3>
-                                            <div class="card-toolbar">
-                                                <button type="button" class="btn btn-sm btn-primary"
-                                                    data-bs-toggle="modal" data-bs-target="#eventAddModal"><i class="ki-duotone ki-plus-square ">
-                                                        <span class="path1"></span>
-                                                        <span class="path2"></span>
-                                                        <span class="path3"></span>
-                                                    </i>
-                                                    Add Event
-                                                </button>
-                                                <div class="modal fade" tabindex="-1" id="eventAddModal">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h3 class="modal-title">이벤트 계획 등록</h3>
 
-                                                                <!--begin::Close-->
-                                                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
-                                                                    data-bs-dismiss="modal" aria-label="Close">
-                                                                    <i class="ki-duotone ki-cross fs-1"><span
-                                                                            class="path1"></span><span
-                                                                            class="path2"></span></i>
-                                                                </div>
-                                                                <!--end::Close-->
-                                                            </div>
+                                        <div class="card-body">
+                                            <div class="wrap_date_area">
+                                                <div class="d-flex">
 
-                                                            <div class="modal-body">
-                                                                <div class="row mb-8">
-                                                                    <div class="input-group-sm">
-                                                                        <label class="form-label "
-                                                                            for="event_place">Event Place<span
-                                                                                class="requird">*</span></label>
-                                                                        <select name="event_place_id" id="event_place"
-                                                                            class="form-select form-control-solid"
-                                                                            value="">
-                                                                            <option value="" selected="selected">선택
-                                                                            </option>
-                                                                            <option value="118311"></option>
-                                                                            <option value="101120">C/UNH서울타워</option>
-                                                                            <option value="101121">C/U구로정우</option>
-                                                                            <option value="101122">C/U동양미래대학교</option>
-                                                                            <option value="101123">C/U마곡미라벨</option>
-                                                                            <option value="101124">C/U마곡월튼</option>
-                                                                            <option value="101125">C/U마곡웰튼</option>
-                                                                            <option value="101126">C/U마곡필굿점</option>
-                                                                            <option value="101127">C/U목동41타워</option>
-                                                                            <option value="101128">C/U목동드림타워</option>
-                                                                            <option value="101129">C/U부천오정산업단지</option>
-                                                                            <option value="101130">C/U양평이레빌딩</option>
-                                                                            <option value="101131">C/U영등포세무서</option>
-                                                                            <option value="101132">CU마곡미라벨</option>
-                                                                            <option value="101133">CU정우</option>
-                                                                            <option value="101134">E/M가산디지털역앞흡연부스
-                                                                            </option>
-                                                                            <option value="101135">G/S가산에이스</option>
-                                                                            <option value="101136">G/S가양더리브</option>
-                                                                            <option value="101139">G/S가양테크노</option>
-                                                                            <option value="101140">G/S마곡에이스</option>
-                                                                            <option value="101137">G/S서운단지점</option>
-                                                                            <option value="101142">G/S여의성우</option>
-                                                                            <option value="101143">G/S트윈타워</option>
-                                                                            <option value="101144">KBS본관</option>
-                                                                            <option value="101145">KBS본관앞</option>
-                                                                            <option value="101146">LG가산디지털센터</option>
-                                                                            <option value="101147">LG사이언스파크</option>
-                                                                            <option value="101149">MICROTEC</option>
-                                                                            <option value="101150">MS구로이엔씨</option>
-                                                                            <option value="101151">가산메트로지식산업센터</option>
-                                                                            <option value="101152">가양테크노</option>
-                                                                            <option value="101153">갑을그레이트밸리</option>
-                                                                            <option value="101154">강서IT밸리</option>
-                                                                            <option value="101155">경동나비앤</option>
-                                                                            <option value="101156">경동보일러</option>
-                                                                            <option value="101157">교원공제회관</option>
-                                                                            <option value="101159">교직원공제외</option>
-                                                                            <option value="101158">교직원공제회</option>
-                                                                            <option value="101161">구로이앤씨</option>
-                                                                            <option value="101163">구로이엔씨</option>
-                                                                            <option value="101164">구로정우</option>
-                                                                            <option value="101165">국민은행서여의도지점</option>
-                                                                            <option value="101166">국민일보가판</option>
-                                                                            <option value="101168">김포공항국내선</option>
-                                                                            <option value="101169">넥센</option>
-                                                                            <option value="101170">넥센유니버시티</option>
-                                                                            <option value="101171">대륭포스트17차</option>
-                                                                            <option value="101172">대성디폴리스럭키럭키</option>
-                                                                            <option value="101173">더카페&amp;마트</option>
-                                                                            <option value="101174">로뎀타워</option>
-                                                                            <option value="101178">롯데R&amp;D센터흡연구역
-                                                                            </option>
-                                                                            <option value="101175">롯데영우김포공항</option>
-                                                                            <option value="101176">롯데영우부천</option>
-                                                                            <option value="101177">롯데영우영등포</option>
-                                                                            <option value="101179">롯데중동점</option>
-                                                                            <option value="101180">마곡파인스퀘어3차</option>
-                                                                            <option value="101181">마곡홈앤쇼핑</option>
-                                                                            <option value="101182">명동칼국수앞흡연구역</option>
-                                                                            <option value="101183">바바리안모터스</option>
-                                                                            <option value="101185">보타닉푸르지오시티</option>
-                                                                            <option value="101186">삼희익스콘벤처타워</option>
-                                                                            <option value="101187">삼희익스콘벤처타워흡연부스
-                                                                            </option>
-                                                                            <option value="101188">상동홈플러스</option>
-                                                                            <option value="101190">스포츠조선</option>
-                                                                            <option value="101191">시흥유통상가</option>
-                                                                            <option value="101192">시흥유통진흥회</option>
-                                                                            <option value="101193">신도림역2번출구</option>
-                                                                            <option value="101194">신세기상사</option>
-                                                                            <option value="101195">아이에스biz타워</option>
-                                                                            <option value="101196">아이에스BIZ타워1차</option>
-                                                                            <option value="101197">양평동이레빌딩흡연구역</option>
-                                                                            <option value="101198">에이스하이엔드타워2</option>
-                                                                            <option value="101199">엘마트</option>
-                                                                            <option value="101201">여의도역3번출구흡연실</option>
-                                                                            <option value="101203">여의도포스트타워</option>
-                                                                            <option value="101200">여의도하나증권</option>
-                                                                            <option value="101205">여의도하나증권앞</option>
-                                                                            <option value="101206">우림라이온스밸리</option>
-                                                                            <option value="101207">우림라이온스밸리A</option>
-                                                                            <option value="101208">우림블루라인</option>
-                                                                            <option value="101209">이지스자산운영</option>
-                                                                            <option value="101210">이지스타워앞</option>
-                                                                            <option value="101211">익스콘벤처타워흡연부스</option>
-                                                                            <option value="101212">전경련회관</option>
-                                                                            <option value="101213">켄달스퀘어물류센터</option>
-                                                                            <option value="101214">투나백화점</option>
-                                                                            <option value="101215">튜나쇼핑몰인근</option>
-                                                                            <option value="101216">하나증권앞흡연부스</option>
-                                                                            <option value="101217">한끼식당</option>
-                                                                            <option value="101218">현대지식산업센터</option>
-                                                                            <option value="101219">호서전문학교</option>
-                                                                        </select>
+                                                    <div class="date_area">
+                                                        <div class="input-group-sm">
+                                                            <label class="form-label a11y" for="search_year">연도
+                                                                선택</label>
+                                                            <select class="form-select" id="search_year">
+                                                                <option value="">연도 선택</option>
+                                                                <option value="2024" selected="">2024년</option>
+                                                                <option value="2025">2025년</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="input-group-sm"><label class="form-label a11y"
+                                                                for="search_month">연도
+                                                                선택</label>
+                                                            <select class="form-select input-sm" id="search_month"
+                                                                onchange="changeMonth(this.value)">
+                                                                <option value="">월 선택</option>
+                                                                <option value="01">01월</option>
+                                                                <option value="02">02월</option>
+                                                                <option value="03">03월</option>
+                                                                <option value="04">04월</option>
+                                                                <option value="05">05월</option>
+                                                                <option value="06">06월</option>
+                                                                <option value="07">07월</option>
+                                                                <option value="08">08월</option>
+                                                                <option value="09">09월</option>
+                                                                <option value="10">10월</option>
+                                                                <option value="11" selected="">11월</option>
+                                                                <option value="12">12월</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn_area">
+                                                        <a href="#" class="btn btn-sm btn-light-success"><i
+                                                                class="fas fa-file-excel fs-4"></i> 엑셀 직책구분</a>
+                                                        <a href="#" class="btn btn-sm btn-light-success"><i
+                                                                class="ki-duotone ki-people fs-4">
+                                                                <span class="path1"></span>
+                                                                <span class="path2"></span>
+                                                                <span class="path3"></span>
+                                                                <span class="path4"></span>
+                                                                <span class="path5"></span>
+                                                            </i> 엑셀 참석인원</a>
+                                                        <button href="#" class="btn btn-sm btn-light-primary"
+                                                            data-bs-toggle="modal" data-bs-target="#uploaeModal"><i
+                                                                class="fa-solid fa-upload fs-4"></i> 업로드 통합 양식</button>
+                                                        <div class="modal fade" tabindex="-1" id="uploaeModal">
+                                                            <div class="modal-dialog  modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h3 class="modal-title">참석정보 파일 선택 하세요</h3>
+
+                                                                        <!--begin::Close-->
+                                                                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+                                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                                            <i class="ki-duotone ki-cross fs-1"><span
+                                                                                    class="path1"></span><span
+                                                                                    class="path2"></span></i>
+                                                                        </div>
+                                                                        <!--end::Close-->
                                                                     </div>
 
-                                                                </div>
-                                                                <div class="row mb-8">
-                                                                    <div class="input-group-sm"><label
-                                                                            for="exampleFormControlInput1"
-                                                                            class="form-label">Event Description</label>
-                                                                        <input type="exampleFormControlInput1"
-                                                                            class="form-control bg-transparent"
-                                                                            placeholder="비고" />
-                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="d-flex justify-content-center">
 
-                                                                </div>
-                                                                <div class="row mb-8">
-                                                                    <div class="col-6">
-                                                                        <label class="form-label" for="">시행일자</label>
-                                                                        <div class="input-group input-group-sm"
-                                                                            id="date01" data-td-target-input="nearest"
-                                                                            data-td-target-toggle="nearest">
-                                                                            <input id="date01_input" type="text"
-                                                                                class="form-control"
-                                                                                data-td-target="#date01"
-                                                                                value="2024/11/22" />
-                                                                            <span class="input-group-text"
-                                                                                data-td-target="#date01"
-                                                                                data-td-toggle="datetimepicker">
-                                                                                <i class="ki-duotone ki-calendar fs-2"><span
-                                                                                        class="path1"></span><span
-                                                                                        class="path2"></span></i>
-                                                                            </span>
+                                                                            <input class="" id="uplaodFile" type="file"
+                                                                                accept=".png, .jpg, .jpeg">
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="row mb-8">
-                                                                    <div class="col-6 input-group-sm">
-                                                                        <label class="form-label " for="startTime">시작
-                                                                            시간</label>
-                                                                        <select name="start_time" id="startTime"
-                                                                            class="form-select">
-                                                                            <option value="">선택</option>
-                                                                            <option value="00:00">00:00</option>
-                                                                            <option value="00:30">00:30</option>
-                                                                            <option value="01:00">01:00</option>
-                                                                            <option value="01:30">01:30</option>
-                                                                            <option value="02:00">02:00</option>
-                                                                            <option value="02:30">02:30</option>
-                                                                            <option value="03:00">03:00</option>
-                                                                            <option value="03:30">03:30</option>
-                                                                            <option value="04:00">04:00</option>
-                                                                            <option value="04:30">04:30</option>
-                                                                            <option value="05:00">05:00</option>
-                                                                            <option value="05:30">05:30</option>
-                                                                            <option value="06:00">06:00</option>
-                                                                            <option value="06:30">06:30</option>
-                                                                            <option value="07:00">07:00</option>
-                                                                            <option value="07:30" selected="selected">
-                                                                                07:30</option>
-                                                                            <option value="08:00">08:00</option>
-                                                                            <option value="08:30">08:30</option>
-                                                                            <option value="09:00">09:00</option>
-                                                                            <option value="09:30">09:30</option>
-                                                                            <option value="10:00">10:00</option>
-                                                                            <option value="10:30">10:30</option>
-                                                                            <option value="11:00">11:00</option>
-                                                                            <option value="11:30">11:30</option>
-                                                                            <option value="12:00">12:00</option>
-                                                                            <option value="12:30">12:30</option>
-                                                                            <option value="13:00">13:00</option>
-                                                                            <option value="13:30">13:30</option>
-                                                                            <option value="14:00">14:00</option>
-                                                                            <option value="14:30">14:30</option>
-                                                                            <option value="15:00">15:00</option>
-                                                                            <option value="15:30">15:30</option>
-                                                                            <option value="16:00">16:00</option>
-                                                                            <option value="16:30">16:30</option>
-                                                                            <option value="17:00">17:00</option>
-                                                                            <option value="17:30">17:30</option>
-                                                                            <option value="18:00">18:00</option>
-                                                                            <option value="18:30">18:30</option>
-                                                                            <option value="19:00">19:00</option>
-                                                                            <option value="19:30">19:30</option>
-                                                                            <option value="20:00">20:00</option>
-                                                                            <option value="20:30">20:30</option>
-                                                                            <option value="21:00">21:00</option>
-                                                                            <option value="21:30">21:30</option>
-                                                                            <option value="22:00">22:00</option>
-                                                                            <option value="22:30">22:30</option>
-                                                                            <option value="23:00">23:00</option>
-                                                                            <option value="23:30">23:30</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-6 input-group-sm">
-                                                                        <label class="form-label " for="endTime">종료
-                                                                            시간</label>
-                                                                        <select name="end_time" id="endTime"
-                                                                            class="form-select">
-                                                                            <option value="">선택</option>
-                                                                            <option value="08:00">08:00</option>
-                                                                            <option value="08:30" selected="selected">
-                                                                                08:30</option>
-                                                                            <option value="09:00">09:00</option>
-                                                                            <option value="09:30">09:30</option>
-                                                                            <option value="10:00">10:00</option>
-                                                                            <option value="10:30">10:30</option>
-                                                                            <option value="11:00">11:00</option>
-                                                                            <option value="11:30">11:30</option>
-                                                                            <option value="12:00">12:00</option>
-                                                                            <option value="12:30">12:30</option>
-                                                                            <option value="13:00">13:00</option>
-                                                                            <option value="13:30">13:30</option>
-                                                                            <option value="14:00">14:00</option>
-                                                                            <option value="14:30">14:30</option>
-                                                                            <option value="15:00">15:00</option>
-                                                                            <option value="15:30">15:30</option>
-                                                                            <option value="16:00">16:00</option>
-                                                                            <option value="16:30">16:30</option>
-                                                                            <option value="17:00">17:00</option>
-                                                                            <option value="17:30">17:30</option>
-                                                                            <option value="18:00">18:00</option>
-                                                                            <option value="18:30">18:30</option>
-                                                                            <option value="19:00">19:00</option>
-                                                                            <option value="19:30">19:30</option>
-                                                                            <option value="20:00">20:00</option>
-                                                                            <option value="20:30">20:30</option>
-                                                                            <option value="21:00">21:00</option>
-                                                                            <option value="21:30">21:30</option>
-                                                                            <option value="22:00">22:00</option>
-                                                                            <option value="22:30">22:30</option>
-                                                                            <option value="23:00">23:00</option>
-                                                                            <option value="23:30">23:30</option>
-                                                                        </select>
+
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-light"
+                                                                            data-bs-dismiss="modal">닫기</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-primary">등록</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-light"
-                                                                    data-bs-dismiss="modal">닫기</button>
-                                                                <button type="button"
-                                                                    class="btn btn-primary">저장</button>
-                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
 
-                                            <div id="calendar"></div>
-                                            <!-- Modal for Event Details -->
-                                            <div class="modal fade" id="eventModal" tabindex="-1"
-                                                aria-labelledby="eventModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog  modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="eventModalLabel">C/U마곡미라벨 <span class="">101123</span></h5>
-                                                            <div class="justify-content-end">
-                                                                <div class="btn btn-icon btn-sm btn-color-gray-500 btn-active-icon-primary me-2" data-bs-toggle="tooltip"
-                                                                    data-bs-dismiss="click" id="kt_modal_view_event_edit" aria-label="Edit Event"
-                                                                    data-bs-original-title="Edit Event" data-kt-initialized="1">
-                                                                    <i class="ki-duotone ki-pencil fs-2">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </i>
-                                                                </div>
-                                                                <div class="btn btn-icon btn-sm btn-color-gray-500 btn-active-icon-danger me-2" data-bs-toggle="tooltip"
-                                                                    data-bs-dismiss="click" id="kt_modal_view_event_delete" aria-label="Delete Event"
-                                                                    data-bs-original-title="Delete Event" data-kt-initialized="1">
-                                                                    <i class="ki-duotone ki-trash fs-2">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                        <span class="path3"></span>
-                                                                        <span class="path4"></span>
-                                                                        <span class="path5"></span>
-                                                                    </i>
-                                                                </div>
-                                                                <div class="btn btn-icon btn-sm btn-color-gray-500 btn-active-icon-primary" data-bs-toggle="tooltip"
-                                                                    data-bs-dismiss="modal" aria-label="Hide Event" data-bs-original-title="Hide Event" data-kt-initialized="1">
-                                                                    <i class="ki-duotone ki-cross fs-2x">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div class="calendar_event_infor">
-                                                                
-                                                                <ul class="infor">
-                                                                    <li>
-                                                                        <strong class="as_dt">시작 날짜</strong>
-                                                                        <span class="as_dd">2024-11-16 07:30</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong class="as_dt">종료 날짜</strong>
-                                                                        <span class="as_dd">2024-11-16 07:30</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong class="as_dt">장소 등록 지점</strong>
-                                                                        <span class="as_dd">FS NAMBU</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong class="as_dt">Acqusition</strong>
-                                                                        <span class="as_dd">0</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong class="as_dt">COT Total</strong>
-                                                                        <span class="as_dd">0</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong class="as_dt">Contact</strong>
-                                                                        <span class="as_dd">0</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong class="as_dt">Category Motivation</strong>
-                                                                        <span class="as_dd">0</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong class="as_dt">Guided Trials</strong>
-                                                                        <span class="as_dd">0</span>
-                                                                    </li>
-                                                                </ul>
-                                                                 
-                                                            </div>                                                            
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">닫기</button>
-                                                        </div>
-                                                    </div>
+                                                </div>
+
+                                                <p class="ex"><span class="text-danger fw-bold me-1">[참고]</span>다운받은 양식에
+                                                    실적을 추가하여 업로드
+                                                    하십시오. 업로드시 선택 월의 기존정보(이벤트 및 참석자)는
+                                                    삭제
+                                                    됩니다.</p>
+                                            </div>
+                                            <div class="separator separator-dashed separator-content my-6">
+                                                <i class="ki-duotone ki-abstract-19 fs-1 text-light-primary"><span
+                                                        class="path1"></span><span class="path2"></span></i>
+                                            </div>
+                                            <div class="wrap_table">
+                                                <div class="table-responsive">
+                                                    <table id="table_01" class="table table-row-bordered gy-5">
+                                                        <thead>
+                                                            <tr class="fw-semibold fs-6 text-muted">
+                                                                <th>Event ID</th>
+                                                                <th>지점</th>
+                                                                <th class="text-center">일자</th>
+                                                                <th>장소명</th>
+                                                                <th>장소코드</th>
+                                                                <th class="text-center">시작</th>
+                                                                <th class="text-center">종료</th>
+                                                                <th class="text-end">Contact</th>
+                                                                <th class="text-end">C. Motivation</th>
+                                                                <th class="text-end">G. Demo</th>
+                                                                <th class="text-end">COT</th>
+                                                                <th class="text-end">AQ</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>148295
+                                                                </td>
+                                                                <td> FS NAMBU</td>
+                                                                <td class="text-center">11.16
+                                                                </td>
+                                                                <td><a
+                                                                        href="show_in_map.php?code=Lat:37.563174,Lng:126.824525"><span
+                                                                            class="fw-bold">C/U마곡미라벨</span></a></td>
+                                                                <td>101123
+                                                                </td>
+                                                                <td class="text-center">07:30</td>
+                                                                <td class="text-center">08:30</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end">0</td>
+                                                            </tr>
+                                                        </tbody>
+
+                                                    </table>
                                                 </div>
                                             </div>
+
                                         </div>
 
                                     </div>
@@ -5232,67 +5237,11 @@ License: For each use you must have a valid license purchased only from above li
     <script src="assets/js/custom/utilities/modals/create-campaign.js"></script>
     <script src="assets/js/custom/utilities/modals/users-search.js"></script>
     <!--end::Custom Javascript-->
+    <!-- 차트 -->
 
     <script>
-        new tempusDominus.TempusDominus(document.getElementById("date01"), {
-            localization: {
-                locale: "ko",
-                startOfTheWeek: 1,
-                format: "yyyy/MM/dd"
-            },
-            
-            display: {
-                viewMode: "calendar",
-                components: {
-                    decades: true,
-                    year: true,
-                    month: true,
-                    date: true,
-                    hours: false,
-                    minutes: false,
-                    seconds: false
-                }
-            }
-        });
-    </script>
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
-
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                locale: 'ko', // Set locale to Korean
-                headerToolbar: {
-                    left: 'prev,next today',
-                    center: 'title',
-                    right: 'dayGridMonth,timeGridWeek,timeGridDay' // View buttons
-                },
-                events: [
-                    {
-                        title: 'Meeting with Team',
-                        start: '2024-11-10',
-                        description: 'Discuss project goals and deliverables.'
-                    },
-                    {
-                        title: 'Lunch with Client',
-                        start: '2024-11-15',
-                        description: 'Client meeting at downtown restaurant.'
-                    }
-                ],
-                eventClick: function (info) {
-                    // Display event details in modal
-                    // document.getElementById('modalEventTitle').innerText = info.event.title;
-                    // document.getElementById('modalEventDate').innerText = info.event.start.toDateString();
-                    // document.getElementById('modalEventDescription').innerText = info.event.extendedProps.description;
-
-                    // Show the modal
-                    var eventModal = new bootstrap.Modal(document.getElementById('eventModal'));
-                    eventModal.show();
-                }
-            });
-
-            calendar.render();
+        $("#table_01").DataTable({
+            "info": false,
         });
 
     </script>

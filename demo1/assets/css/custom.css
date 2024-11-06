@@ -339,5 +339,9 @@ margin-top: 20px;
 
 .modal-body .calendar_event_infor .infor li {
     display: flex;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
+    align-items: center;
+    padding-left: 6px;
 }
+
+.fc .fc-daygrid-event{white-space: normal;}
