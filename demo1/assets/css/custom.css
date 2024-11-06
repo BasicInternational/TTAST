@@ -135,7 +135,7 @@ bottom: 0; }
 
 .login_area .wrap_logo img { height: 100%; } 
 
-.login_area .requird { color: var(--bs-danger); } 
+.requird { color: var(--bs-danger); } 
 
 .wrap_dashboard { display: flex; flex-direction: column; justify-content: space-between; flex-wrap: nowrap; overflow: hidden; width: 100vw; padding-bottom: 16px; padding: 10px 10px 100px; gap: 10px; width: 100%; box-sizing: border-box; } 
 
@@ -319,4 +319,25 @@ table.th_fill th { background: var(--bs-primary-light) !important; }
     position: sticky;
     top:0;
     background: #fff;
+}
+
+
+.wrap_calendar_section{
+
+}
+
+
+.modal-body .calendar_event_infor .infor {
+    font-size: 1.1rem;
+}
+
+.modal-body .calendar_event_infor .infor .as_dt {
+    width: 120px;
+    word-break: break-word;
+    line-height: 1.1;
+}
+
+.modal-body .calendar_event_infor .infor li {
+    display: flex;
+    margin-bottom: 13px;
 }
