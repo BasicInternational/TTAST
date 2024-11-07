@@ -345,3 +345,8 @@ margin-top: 20px;
 }
 
 .fc .fc-daygrid-event{white-space: normal;}
+
+.wrap_map_area{
+    width: 100%;
+    height: calc(100vh - 240px);
+}
