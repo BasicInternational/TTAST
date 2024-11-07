@@ -109,132 +109,395 @@ License: For each use you must have a valid license purchased only from above li
                     <option value="1" selected>전체 지점</option>
                   </select>
                 </div>
-                <div class="wrap_place_list">
-                  <div class="control_box">
-                    <div class="row">
-              
-                      <h3 class="tit">
-                        이벤트 계획 및 실적 관리
-                      </h3>
-                      <p class="sub_tit">* 상세 조회 및 수정은 이벤트 장소명 클릭 하세요</p>
-                    </div>
-                    <!-- <div class="btn_area">
-                                                  <button class="btn btn-sm px-0">
-                                                    <i class="ki-duotone ki-left fs-2 px-0 text-primary"></i> </a>
-                                                  </button>
-                                                  <button class="btn btn-sm  px-0 "> <i class="ki-duotone ki-right fs-2 px-0 text-primary"></i> </a>
-                                                  </button>
-                                                </div> -->
-                  </div>
-                  <ul class="place_list scroll-y ">
-                    <li>
-                      <button>
-                        <div class="tit">
-                          <div>
-                            <strong>C/U영등포세무서</strong>
-                            <span>( 101131 )</span>
-                          </div>
-              
-                        </div>
-                        <div class="data">
-                          <span>생성일 06.18 지점 45</span>
-                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <div class="tit">
-                          <div>
-                            <strong>C/U영등포세무서</strong>
-                            <span>( 101131 )</span>
-                          </div>
-              
-                        </div>
-                        <div class="data">
-                          <span>생성일 06.18 지점 45</span>
-                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <div class="tit">
-                          <div>
-                            <strong>C/U영등포세무서</strong>
-                            <span>( 101131 )</span>
-                          </div>
-              
-                        </div>
-                        <div class="data">
-                          <span>생성일 06.18 지점 45</span>
-                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <div class="tit">
-                          <div>
-                            <strong>C/U영등포세무서</strong>
-                            <span>( 101131 )</span>
-                          </div>
-              
-                        </div>
-                        <div class="data">
-                          <span>생성일 06.18 지점 45</span>
-                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <div class="tit">
-                          <div>
-                            <strong>C/U영등포세무서</strong>
-                            <span>( 101131 )</span>
-                          </div>
-              
-                        </div>
-                        <div class="data">
-                          <span>생성일 06.18 지점 45</span>
-                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <button>
-                        <div class="tit">
-                          <div>
-                            <strong>C/U영등포세무서</strong>
-                            <span>( 101131 )</span>
-                          </div>
-              
-                        </div>
-                        <div class="data">
-                          <span>생성일 06.18 지점 45</span>
-                          <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
-                        </div>
-                      </button>
-                    </li>
-                  </ul>
-                  <ul class="pagination">
-                    <li class="page-item first disabled m-1">
-                      <a href="#" class="page-link px-0">
-                        <i class="ki-duotone ki-double-left fs-2"><span class="path1"></span><span class="path2"></span></i>
-                      </a>
-                    </li>
-                    <li class="page-item previous disabled"><a href="#" class="page-link"><i class="previous"></i></a></li>
-                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item "><a href="#" class="page-link">2</a></li>
-                    <li class="page-item "><a href="#" class="page-link">3</a></li>
-                    <li class="page-item "><a href="#" class="page-link">4</a></li>
-                    <li class="page-item "><a href="#" class="page-link">5</a></li>
-                    <li class="page-item next"><a href="#" class="page-link"><i class="next"></i></a></li>
-                    <li class="page-item next"><a href="#" class="page-link px-0">
-                        <i class="ki-duotone ki-double-right fs-2"><span class="path1"></span><span class="path2"></span></i> </a>
-                    </li>
-                  </ul>
+                <div class="wrap_list_table">
+                  <table id="listTable" class="table table-row-bordered gy-5">
+                    <thead>
+                      <tr class="fw-semibold fs-6 text-gray-800">
+                        <th class="pe-7 a11y">Name</th>
+                
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a href="">
+                            <div class="tit">
+                              <strong>C/U영등포세무서</strong>
+                              <span>( 101131 )</span>
+                            </div>
+                            <div class="data">
+                              <span>생성일 06.18 지점 45</span>
+                              <strong>진행중 / 이벤트 / 실외 / 관공소 정부기관 / 가두리 / Other</strong>
+                            </div>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
               <!--// wrap_aside_area -->
@@ -949,7 +1212,22 @@ License: For each use you must have a valid license purchased only from above li
   <!--end::Custom Javascript-->
   <script>
     $(document).ready(function () {
-     
+     $("#listTable").DataTable(
+        {
+          // language: {
+          //   emptyTable: "등록된 참석자가 없습니다."
+          // },
+          // scrollY: "400px",
+          // scrollX: true,
+          // scrollCollapse: true,
+          // fixedColumns: {
+          //   left: 2
+          // },
+          "pageLength": 5,
+          searching: false, "info": false, "lengthChange": false, "paging": true,
+        },
+
+      );
       $("#table_01").DataTable(
         {
           language: {
